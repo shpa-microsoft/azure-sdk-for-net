@@ -2337,7 +2337,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Batch/Microsoft.Azure.Batch.Conventions.Files.CloudJobExtensions.html",
-          "hash": "Mlh/QK6oUhoV1Da/LreA1w=="
+          "hash": "sMDXrUjlzdorFFKDLnEsMw=="
         }
       },
       "is_incremental": false,
@@ -2349,7 +2349,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Batch/Microsoft.Azure.Batch.Conventions.Files.CloudTaskExtensions.html",
-          "hash": "cBqyW4/h+1FT8syXbDvlAw=="
+          "hash": "LW94m3/kIZ67bPo9+yn+ew=="
         }
       },
       "is_incremental": false,
