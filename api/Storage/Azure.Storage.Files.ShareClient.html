@@ -308,7 +308,7 @@ every request.</p>
   </span>
   <a id="Azure_Storage_Files_ShareClient_Pipeline_" data-uid="Azure.Storage.Files.ShareClient.Pipeline*"></a>
   <h4 id="Azure_Storage_Files_ShareClient_Pipeline" data-uid="Azure.Storage.Files.ShareClient.Pipeline">Pipeline</h4>
-  <div class="markdown level1 summary"><p>Gets the <see cref="!:HttpPipeline"></see> transport pipeline used to send
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="../Core/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a> transport pipeline used to send
 every request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -326,7 +326,7 @@ every request.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpPipeline</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -372,8 +372,8 @@ every request.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/ShareClient.cs/#L247">View Source</a>
   </span>
   <a id="Azure_Storage_Files_ShareClient_Create_" data-uid="Azure.Storage.Files.ShareClient.Create*"></a>
-  <h4 id="Azure_Storage_Files_ShareClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},CancellationToken)">Create(System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_">Create(System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</a> operation creates a new share
+  <h4 id="Azure_Storage_Files_ShareClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},CancellationToken)">Create(Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_">Create(Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</a> operation creates a new share
 under the specified account. If a share with the same name
 already exists, the operation fails.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-share">https://docs.microsoft.com/rest/api/storageservices/create-share</a>.</p>
@@ -381,7 +381,7 @@ already exists, the operation fails.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;ShareInfo&gt; Create(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, int? quotaInBytes = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;ShareInfo&gt; Create(Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, int? quotaInBytes = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -424,8 +424,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the newly
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
 created share.</p>
 </td>
       </tr>
@@ -443,8 +443,8 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/ShareClient.cs/#L283">View Source</a>
   </span>
   <a id="Azure_Storage_Files_ShareClient_CreateAsync_" data-uid="Azure.Storage.Files.ShareClient.CreateAsync*"></a>
-  <h4 id="Azure_Storage_Files_ShareClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},CancellationToken)">CreateAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_">CreateAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</a> operation creates a new share
+  <h4 id="Azure_Storage_Files_ShareClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Int32},CancellationToken)">CreateAsync(Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_System_Int32__CancellationToken_">CreateAsync(Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;Int32&gt;, CancellationToken)</a> operation creates a new share
 under the specified account. If a share with the same name
 already exists, the operation fails.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-share">https://docs.microsoft.com/rest/api/storageservices/create-share</a>.</p>
@@ -452,7 +452,7 @@ already exists, the operation fails.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;ShareInfo&gt;&gt; CreateAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, int? quotaInBytes = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;ShareInfo&gt;&gt; CreateAsync(Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, int? quotaInBytes = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -495,8 +495,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the newly
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
 created share.</p>
 </td>
       </tr>
@@ -566,8 +566,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;DirectoryClient>"></see> referencing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the
 newly created directory.</p>
 </td>
       </tr>
@@ -637,8 +637,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;DirectoryClient>"></see> referencing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the
 newly created directory.</p>
 </td>
       </tr>
@@ -656,14 +656,14 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/ShareClient.cs/#L381">View Source</a>
   </span>
   <a id="Azure_Storage_Files_ShareClient_CreateSnapshot_" data-uid="Azure.Storage.Files.ShareClient.CreateSnapshot*"></a>
-  <h4 id="Azure_Storage_Files_ShareClient_CreateSnapshot_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.CreateSnapshot(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSnapshot(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_ShareClient_CreateSnapshot_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.CreateSnapshot(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSnapshot(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a read-only snapshot of a share.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/snapshot-share">https://docs.microsoft.com/en-us/rest/api/storageservices/snapshot-share</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;ShareSnapshotInfo&gt; CreateSnapshot(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;ShareSnapshotInfo&gt; CreateSnapshot(Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -700,8 +700,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareSnapshotInfo.html">ShareSnapshotInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareSnapshotInfo>"></see> describing the newly
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareSnapshotInfo.html">ShareSnapshotInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
 created snapshot.</p>
 </td>
       </tr>
@@ -719,14 +719,14 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/ShareClient.cs/#L410">View Source</a>
   </span>
   <a id="Azure_Storage_Files_ShareClient_CreateSnapshotAsync_" data-uid="Azure.Storage.Files.ShareClient.CreateSnapshotAsync*"></a>
-  <h4 id="Azure_Storage_Files_ShareClient_CreateSnapshotAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.CreateSnapshotAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSnapshotAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_ShareClient_CreateSnapshotAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.CreateSnapshotAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSnapshotAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a read-only snapshot of a share.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/snapshot-share">https://docs.microsoft.com/en-us/rest/api/storageservices/snapshot-share</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;ShareSnapshotInfo&gt;&gt; CreateSnapshotAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;ShareSnapshotInfo&gt;&gt; CreateSnapshotAsync(Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -763,8 +763,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareSnapshotInfo.html">ShareSnapshotInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareSnapshotInfo>"></see> describing the newly
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareSnapshotInfo.html">ShareSnapshotInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
 created snapshot.</p>
 </td>
       </tr>
@@ -828,8 +828,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>A <see cref="!:Response"></see> on successfully deleting.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully deleting.</p>
 </td>
       </tr>
     </tbody>
@@ -892,8 +892,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>A <see cref="!:Response"></see> on successfully deleting.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully deleting.</p>
 </td>
       </tr>
     </tbody>
@@ -956,8 +956,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>A <see cref="!:Response"></see> if successful.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -1019,8 +1019,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>A <see cref="!:Response"></see> if successful.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -1076,8 +1076,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;T>"></see> of <see cref="!:IEnumerable&lt;SignedIdentifier>"></see>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> of <see cref="!:IEnumerable&lt;SignedIdentifier>"></see>
 describing the share's access policy.</p>
 </td>
       </tr>
@@ -1135,8 +1135,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;T>"></see> of <see cref="!:IEnumerable&lt;SignedIdentifier>"></see>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.SignedIdentifier.html">SignedIdentifier</a>&gt;&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> of <see cref="!:IEnumerable&lt;SignedIdentifier>"></see>
 describing the share's access policy.</p>
 </td>
       </tr>
@@ -1253,8 +1253,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareProperties.html">ShareProperties</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareProperties>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareProperties.html">ShareProperties</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 share's properties.</p>
 </td>
       </tr>
@@ -1318,8 +1318,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareProperties.html">ShareProperties</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareProperties>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareProperties.html">ShareProperties</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 share's properties.</p>
 </td>
       </tr>
@@ -1409,8 +1409,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareStatistics.html">ShareStatistics</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareStatistics>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareStatistics.html">ShareStatistics</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 share statistics.</p>
 </td>
       </tr>
@@ -1466,8 +1466,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareStatistics.html">ShareStatistics</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareStatistics>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareStatistics.html">ShareStatistics</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 share statistics.</p>
 </td>
       </tr>
@@ -1532,8 +1532,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 updated share.</p>
 </td>
       </tr>
@@ -1598,8 +1598,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 updated share.</p>
 </td>
       </tr>
@@ -1617,15 +1617,15 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/ShareClient.cs/#L858">View Source</a>
   </span>
   <a id="Azure_Storage_Files_ShareClient_SetMetadata_" data-uid="Azure.Storage.Files.ShareClient.SetMetadata*"></a>
-  <h4 id="Azure_Storage_Files_ShareClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadata(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadata(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
+  <h4 id="Azure_Storage_Files_ShareClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadata(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadata(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
 metadata for the specified share as one or more name-value pairs.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-share-metadata">https://docs.microsoft.com/rest/api/storageservices/set-share-metadata</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;ShareInfo&gt; SetMetadata(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;ShareInfo&gt; SetMetadata(Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1662,8 +1662,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the updated
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
 share.</p>
 </td>
       </tr>
@@ -1681,15 +1681,15 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/ShareClient.cs/#L888">View Source</a>
   </span>
   <a id="Azure_Storage_Files_ShareClient_SetMetadataAsync_" data-uid="Azure.Storage.Files.ShareClient.SetMetadataAsync*"></a>
-  <h4 id="Azure_Storage_Files_ShareClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
+  <h4 id="Azure_Storage_Files_ShareClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.ShareClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadataAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.ShareClient.html#Azure_Storage_Files_ShareClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadataAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
 metadata for the specified share as one or more name-value pairs.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-share-metadata">https://docs.microsoft.com/rest/api/storageservices/set-share-metadata</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;ShareInfo&gt;&gt; SetMetadataAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;ShareInfo&gt;&gt; SetMetadataAsync(Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1726,8 +1726,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the updated
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
 share.</p>
 </td>
       </tr>
@@ -1789,8 +1789,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the updated
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
 share.</p>
 </td>
       </tr>
@@ -1852,8 +1852,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the updated
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
 share.</p>
 </td>
       </tr>
@@ -1921,8 +1921,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;ShareInfo>"></see> describing the updated
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.ShareInfo.html">ShareInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
 share.</p>
 </td>
       </tr>
@@ -1988,6 +1988,25 @@ class with an identical <a class="xref" href="Azure.Storage.Files.ShareClient.ht
   <h5 id="Azure_Storage_Files_ShareClient_WithSnapshot_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Pass null or empty string to remove the snapshot returning a URL to the base share.</p>
 </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
 </article>
           </div>
           

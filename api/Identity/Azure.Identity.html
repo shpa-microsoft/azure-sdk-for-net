@@ -81,8 +81,8 @@
       <section><p>An exception class raised for errors in authenticating client reqeusts.</p>
 </section>
       <h4><a class="xref" href="Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a></h4>
-      <section><p>Provides a <see cref="!:TokenCredential"></see> implementation which chains multiple <see cref="!:TokenCredential"></see> implementations to be tried in order
-until one of the getToken methods returns a non-default <see cref="!:AccessToken"></see>.</p>
+      <section><p>Provides a <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementation which chains multiple <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementations to be tried in order
+until one of the getToken methods returns a non-default <a class="xref" href="../Core/Azure.Core.AccessToken.html">AccessToken</a>.</p>
 </section>
       <h4><a class="xref" href="Azure.Identity.ClientCertificateCredential.html">ClientCertificateCredential</a></h4>
       <section><p>Enables authentication of a service principal in to Azure Active Directory using a X509 certificate that is assigned to it's App Registration. More information
@@ -104,7 +104,7 @@ Consult the documentation of these credential types for more information on how 
 </ul>
 </section>
       <h4><a class="xref" href="Azure.Identity.DeviceCodeCredential.html">DeviceCodeCredential</a></h4>
-      <section><p>A <see cref="!:TokenCredential"></see> implementation which authenticates a user using the device code flow, and provides access tokens for that user account.<br>
+      <section><p>A <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementation which authenticates a user using the device code flow, and provides access tokens for that user account.<br>
 For more information on the device code authentication flow see <a href="https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow">https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow</a>.</p>
 </section>
       <h4><a class="xref" href="Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></h4>
@@ -123,7 +123,7 @@ documentation of that class for more details.</li>
       <section><p>Options to configure requests made to Azure Identity Services</p>
 </section>
       <h4><a class="xref" href="Azure.Identity.InteractiveBrowserCredential.html">InteractiveBrowserCredential</a></h4>
-      <section><p>A <see cref="!:TokenCredential"></see> implementation which launches the system default browser to interactively authenticate a user, and obtain an access token.
+      <section><p>A <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementation which launches the system default browser to interactively authenticate a user, and obtain an access token.
 The browser will only be launched to authenticate the user once, then will silently aquire access tokens through the users refresh token as long as it's valid.</p>
 </section>
       <h4><a class="xref" href="Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a></h4>

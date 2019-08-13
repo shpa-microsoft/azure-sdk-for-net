@@ -231,7 +231,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -298,7 +298,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -353,7 +353,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -420,26 +420,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_ApplicationModel_Configuration_ConfigurationClient_Delete_System_String_System_String_ETag_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.ApplicationModel.Configuration.ConfigurationClient.Delete(System.String%2CSystem.String%2CETag%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_ApplicationModel_Configuration_ConfigurationClient_Delete_System_String_System_String_Azure_Core_Http_ETag_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.ApplicationModel.Configuration.ConfigurationClient.Delete(System.String%2CSystem.String%2CAzure.Core.Http.ETag%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/appconfiguration/Azure.ApplicationModel.Configuration/src/ConfigurationClient.cs/#L455">View Source</a>
   </span>
   <a id="Azure_ApplicationModel_Configuration_ConfigurationClient_Delete_" data-uid="Azure.ApplicationModel.Configuration.ConfigurationClient.Delete*"></a>
-  <h4 id="Azure_ApplicationModel_Configuration_ConfigurationClient_Delete_System_String_System_String_ETag_CancellationToken_" data-uid="Azure.ApplicationModel.Configuration.ConfigurationClient.Delete(System.String,System.String,ETag,CancellationToken)">Delete(String, String, ETag, CancellationToken)</h4>
+  <h4 id="Azure_ApplicationModel_Configuration_ConfigurationClient_Delete_System_String_System_String_Azure_Core_Http_ETag_CancellationToken_" data-uid="Azure.ApplicationModel.Configuration.ConfigurationClient.Delete(System.String,System.String,Azure.Core.Http.ETag,CancellationToken)">Delete(String, String, ETag, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Deletes an existing <a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a> in the configuration store.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response Delete(string key, string label = null, ETag etag = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response Delete(string key, string label = null, ETag etag = default(ETag), CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -464,7 +464,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ETag</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.ETag.html">ETag</a></td>
         <td><span class="parametername">etag</span></td>
         <td><p>The value of an etag indicates the state of a configuration setting within a configuration store.
 If it is specified, the configuration setting is only deleted if etag value matches etag value in the configuration store.
@@ -489,26 +489,26 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_ApplicationModel_Configuration_ConfigurationClient_DeleteAsync_System_String_System_String_ETag_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.ApplicationModel.Configuration.ConfigurationClient.DeleteAsync(System.String%2CSystem.String%2CETag%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_ApplicationModel_Configuration_ConfigurationClient_DeleteAsync_System_String_System_String_Azure_Core_Http_ETag_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.ApplicationModel.Configuration.ConfigurationClient.DeleteAsync(System.String%2CSystem.String%2CAzure.Core.Http.ETag%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/appconfiguration/Azure.ApplicationModel.Configuration/src/ConfigurationClient.cs/#L419">View Source</a>
   </span>
   <a id="Azure_ApplicationModel_Configuration_ConfigurationClient_DeleteAsync_" data-uid="Azure.ApplicationModel.Configuration.ConfigurationClient.DeleteAsync*"></a>
-  <h4 id="Azure_ApplicationModel_Configuration_ConfigurationClient_DeleteAsync_System_String_System_String_ETag_CancellationToken_" data-uid="Azure.ApplicationModel.Configuration.ConfigurationClient.DeleteAsync(System.String,System.String,ETag,CancellationToken)">DeleteAsync(String, String, ETag, CancellationToken)</h4>
+  <h4 id="Azure_ApplicationModel_Configuration_ConfigurationClient_DeleteAsync_System_String_System_String_Azure_Core_Http_ETag_CancellationToken_" data-uid="Azure.ApplicationModel.Configuration.ConfigurationClient.DeleteAsync(System.String,System.String,Azure.Core.Http.ETag,CancellationToken)">DeleteAsync(String, String, ETag, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Deletes an existing <a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a> in the configuration store.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&gt; DeleteAsync(string key, string label = null, ETag etag = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&gt; DeleteAsync(string key, string label = null, ETag etag = default(ETag), CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -533,7 +533,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ETag</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.ETag.html">ETag</a></td>
         <td><span class="parametername">etag</span></td>
         <td><p>The value of an etag indicates the state of a configuration setting within a configuration store.
 If it is specified, the configuration setting is only deleted if etag value matches etag value in the configuration store.
@@ -558,7 +558,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -674,7 +674,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -741,7 +741,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -827,7 +827,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -882,7 +882,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AsyncCollection</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -937,7 +937,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -992,7 +992,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AsyncCollection</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1047,7 +1047,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1114,7 +1114,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1169,7 +1169,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1236,7 +1236,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1322,7 +1322,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1389,7 +1389,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1444,7 +1444,7 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1511,11 +1511,30 @@ If no etag value is passed in, then the setting is always deleted.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.ApplicationModel.Configuration.ConfigurationSetting.html">ConfigurationSetting</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
 </article>
           </div>
           

@@ -82,25 +82,27 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IAzureClientFactoryBuilderWithCredential</span></div>
+    <div><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration-1.html">IAzureClientFactoryBuilderWithConfiguration</a>&lt;<span class="xref">IConfiguration</span>&gt;</div>
+    <div><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientFactoryBuilder.html">IAzureClientFactoryBuilder</a></div>
+    <div><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential.html">IAzureClientFactoryBuilderWithCredential</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Microsoft.Extensions.Azure.html">Microsoft.Extensions.Azure</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Extensions.Azure.dll</h6>
   <h5 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class AzureClientFactoryBuilder : IAzureClientFactoryBuilderWithConfiguration&lt;IConfiguration&gt;, IAzureClientFactoryBuilderWithCredential</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class AzureClientFactoryBuilder : object, IAzureClientFactoryBuilderWithConfiguration&lt;IConfiguration&gt;, IAzureClientFactoryBuilder, IAzureClientFactoryBuilderWithCredential</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_ClientOptions_IServiceProvider__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action%7BClientOptions%2CIServiceProvider%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_Azure_Core_Pipeline_ClientOptions_IServiceProvider__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action%7BAzure.Core.Pipeline.ClientOptions%2CIServiceProvider%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Microsoft.Extensions.Azure/src/AzureClientFactoryBuilder.cs/#L54">View Source</a>
   </span>
   <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults*"></a>
-  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_ClientOptions_IServiceProvider__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action{ClientOptions,IServiceProvider})">ConfigureDefaults(Action&lt;ClientOptions, IServiceProvider&gt;)</h4>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_Azure_Core_Pipeline_ClientOptions_IServiceProvider__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action{Azure.Core.Pipeline.ClientOptions,IServiceProvider})">ConfigureDefaults(Action&lt;ClientOptions, IServiceProvider&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -118,7 +120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">ClientOptions</span>, <span class="xref">IServiceProvider</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="../Core/Azure.Core.Pipeline.ClientOptions.html">ClientOptions</a>, <span class="xref">IServiceProvider</span>&gt;</td>
         <td><span class="parametername">configureOptions</span></td>
         <td></td>
       </tr>
@@ -141,13 +143,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_ClientOptions__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action%7BClientOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_Azure_Core_Pipeline_ClientOptions__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action%7BAzure.Core.Pipeline.ClientOptions%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Microsoft.Extensions.Azure/src/AzureClientFactoryBuilder.cs/#L48">View Source</a>
   </span>
   <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults*"></a>
-  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_ClientOptions__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action{ClientOptions})">ConfigureDefaults(Action&lt;ClientOptions&gt;)</h4>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Action_Azure_Core_Pipeline_ClientOptions__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Action{Azure.Core.Pipeline.ClientOptions})">ConfigureDefaults(Action&lt;ClientOptions&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -165,7 +167,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<span class="xref">ClientOptions</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="../Core/Azure.Core.Pipeline.ClientOptions.html">ClientOptions</a>&gt;</td>
         <td><span class="parametername">configureOptions</span></td>
         <td></td>
       </tr>
@@ -235,18 +237,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_Func_IServiceProvider_TokenCredential__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Func%7BIServiceProvider%2CTokenCredential%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_Azure_Core_TokenCredential_.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Microsoft.Extensions.Azure/src/AzureClientFactoryBuilder.cs/#L100">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Microsoft.Extensions.Azure/src/AzureClientFactoryBuilder.cs/#L95">View Source</a>
   </span>
   <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential*"></a>
-  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_Func_IServiceProvider_TokenCredential__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Func{IServiceProvider,TokenCredential})">UseCredential(Func&lt;IServiceProvider, TokenCredential&gt;)</h4>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_Azure_Core_TokenCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)">UseCredential(TokenCredential)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AzureClientFactoryBuilder UseCredential(Func&lt;IServiceProvider, TokenCredential&gt; tokenCredentialFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">public AzureClientFactoryBuilder UseCredential(TokenCredential tokenCredential)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -259,8 +261,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;<span class="xref">IServiceProvider</span>, <span class="xref">TokenCredential</span>&gt;</td>
-        <td><span class="parametername">tokenCredentialFactory</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">tokenCredential</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -282,18 +284,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_TokenCredential_.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(TokenCredential)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_Func_IServiceProvider_Azure_Core_TokenCredential__.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Func%7BIServiceProvider%2CAzure.Core.TokenCredential%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Microsoft.Extensions.Azure/src/AzureClientFactoryBuilder.cs/#L95">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Microsoft.Extensions.Azure/src/AzureClientFactoryBuilder.cs/#L100">View Source</a>
   </span>
   <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential*"></a>
-  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_TokenCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(TokenCredential)">UseCredential(TokenCredential)</h4>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_Func_IServiceProvider_Azure_Core_TokenCredential__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Func{IServiceProvider,Azure.Core.TokenCredential})">UseCredential(Func&lt;IServiceProvider, TokenCredential&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AzureClientFactoryBuilder UseCredential(TokenCredential tokenCredential)</code></pre>
+    <pre><code class="lang-csharp hljs">public AzureClientFactoryBuilder UseCredential(Func&lt;IServiceProvider, TokenCredential&gt; tokenCredentialFactory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -306,8 +308,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TokenCredential</span></td>
-        <td><span class="parametername">tokenCredential</span></td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">IServiceProvider</span>, <a class="xref" href="../Core/Azure.Core.TokenCredential.html">TokenCredential</a>&gt;</td>
+        <td><span class="parametername">tokenCredentialFactory</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -327,9 +329,103 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_IConfiguration__RegisterClientFactory__2_IConfiguration_.md&amp;value=---%0Auid%3A%20Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure%23Core%23Extensions%23IAzureClientFactoryBuilderWithConfiguration%7BIConfiguration%7D%23RegisterClientFactory%60%602(IConfiguration)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Microsoft.Extensions.Azure/src/AzureClientFactoryBuilder.cs/#L33">View Source</a>
+  </span>
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_IConfiguration__RegisterClientFactory_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilderWithConfiguration{IConfiguration}#RegisterClientFactory*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_IConfiguration__RegisterClientFactory__2_IConfiguration_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilderWithConfiguration{IConfiguration}#RegisterClientFactory``2(IConfiguration)">IAzureClientFactoryBuilderWithConfiguration&lt;IConfiguration&gt;.RegisterClientFactory&lt;TClient, TOptions&gt;(IConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAzureClientBuilder&lt;TClient, TOptions&gt; IAzureClientFactoryBuilderWithConfiguration&lt;IConfiguration&gt;.RegisterClientFactory&lt;TClient, TOptions&gt;(IConfiguration configuration)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder</a>&lt;TClient, TOptions&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IAzureClientFactoryBuilderWithCredential</span>
+      <a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration-1.html">IAzureClientFactoryBuilderWithConfiguration&lt;TConfiguration&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientFactoryBuilder.html">IAzureClientFactoryBuilder</a>
+  </div>
+  <div>
+      <a class="xref" href="../Core/Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential.html">IAzureClientFactoryBuilderWithCredential</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>

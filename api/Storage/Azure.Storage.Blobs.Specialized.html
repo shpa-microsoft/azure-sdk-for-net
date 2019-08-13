@@ -106,7 +106,7 @@ before 2016-05-31), and a block blob can include up to 50,000 blocks.
 The maximum size of a block blob is therefore slightly more than 4.75
 TB (100 MB X 50,000 blocks).  If you are writing a block blob that is
 no more than 256 MB in size, you can upload it in its entirety with a
-single write operation; see <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+single write operation; see <a class="xref" href="Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, Collections.Generic.IDictionary&lt;String, String&gt;, Nullable&lt;BlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 <p>When you upload a block to a blob in your storage account, it is
 associated with the specified block blob, but it does not become part
 of the blob until you commit a list of blocks that includes the new

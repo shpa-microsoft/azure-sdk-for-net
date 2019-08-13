@@ -90,18 +90,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage__ctor_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.%23ctor(CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage__ctor_Azure_Core_Http_Request_Azure_Core_Pipeline_ResponseClassifier_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.%23ctor(Azure.Core.Http.Request%2CAzure.Core.Pipeline.ResponseClassifier%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L16">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L21">View Source</a>
   </span>
   <a id="Azure_Core_Pipeline_HttpPipelineMessage__ctor_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.#ctor*"></a>
-  <h4 id="Azure_Core_Pipeline_HttpPipelineMessage__ctor_CancellationToken_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.#ctor(CancellationToken)">HttpPipelineMessage(CancellationToken)</h4>
+  <h4 id="Azure_Core_Pipeline_HttpPipelineMessage__ctor_Azure_Core_Http_Request_Azure_Core_Pipeline_ResponseClassifier_CancellationToken_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.#ctor(Azure.Core.Http.Request,Azure.Core.Pipeline.ResponseClassifier,CancellationToken)">HttpPipelineMessage(Request, ResponseClassifier, CancellationToken)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HttpPipelineMessage(CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public HttpPipelineMessage(Request request, ResponseClassifier responseClassifier, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -113,6 +113,16 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Http.Request.html">Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Pipeline.ResponseClassifier.html">ResponseClassifier</a></td>
+        <td><span class="parametername">responseClassifier</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
@@ -127,7 +137,7 @@
     <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_CancellationToken.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.CancellationToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L14">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L19">View Source</a>
   </span>
   <a id="Azure_Core_Pipeline_HttpPipelineMessage_CancellationToken_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.CancellationToken*"></a>
   <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_CancellationToken" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.CancellationToken">CancellationToken</h4>
@@ -154,10 +164,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_HasResponse.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.HasResponse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L45">View Source</a>
+  </span>
+  <a id="Azure_Core_Pipeline_HttpPipelineMessage_HasResponse_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.HasResponse*"></a>
+  <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_HasResponse" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.HasResponse">HasResponse</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasResponse { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_Request.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.Request%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L21">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L28">View Source</a>
   </span>
   <a id="Azure_Core_Pipeline_HttpPipelineMessage_Request_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.Request*"></a>
   <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_Request" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.Request">Request</h4>
@@ -187,7 +227,7 @@
     <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_Response.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.Response%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L23">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L30">View Source</a>
   </span>
   <a id="Azure_Core_Pipeline_HttpPipelineMessage_Response_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.Response*"></a>
   <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_Response" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.Response">Response</h4>
@@ -217,7 +257,7 @@
     <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_ResponseClassifier.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.ResponseClassifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L25">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L47">View Source</a>
   </span>
   <a id="Azure_Core_Pipeline_HttpPipelineMessage_ResponseClassifier_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.ResponseClassifier*"></a>
   <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_ResponseClassifier" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.ResponseClassifier">ResponseClassifier</h4>
@@ -249,7 +289,7 @@
     <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_SetProperty_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.SetProperty(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L33">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L55">View Source</a>
   </span>
   <a id="Azure_Core_Pipeline_HttpPipelineMessage_SetProperty_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.SetProperty*"></a>
   <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_SetProperty_System_String_System_Object_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.SetProperty(System.String,System.Object)">SetProperty(String, Object)</h4>
@@ -283,18 +323,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_TryGetProperty_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.TryGetProperty(System.String%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage_TryGetProperty_System_String_System_Nullable_System_Object___.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage.TryGetProperty(System.String%2CSystem.Nullable%7BSystem.Object%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L27">View Source</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L49">View Source</a>
   </span>
   <a id="Azure_Core_Pipeline_HttpPipelineMessage_TryGetProperty_" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.TryGetProperty*"></a>
-  <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_TryGetProperty_System_String_System_Object__" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.TryGetProperty(System.String,System.Object@)">TryGetProperty(String, out Object)</h4>
+  <h4 id="Azure_Core_Pipeline_HttpPipelineMessage_TryGetProperty_System_String_System_Nullable_System_Object___" data-uid="Azure.Core.Pipeline.HttpPipelineMessage.TryGetProperty(System.String,System.Nullable{System.Object}@)">TryGetProperty(String, out Nullable&lt;Object&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGetProperty(string name, out object value)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool TryGetProperty(string name, out object? value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -312,7 +352,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -333,6 +373,25 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
 </article>
           </div>
           
@@ -344,7 +403,7 @@
                     <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Core_Pipeline_HttpPipelineMessage.md&amp;value=---%0Auid%3A%20Azure.Core.Pipeline.HttpPipelineMessage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Pipeline/HttpPipelineMessage.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

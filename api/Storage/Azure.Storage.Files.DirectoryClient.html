@@ -319,7 +319,7 @@ every request.</p>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_Pipeline_" data-uid="Azure.Storage.Files.DirectoryClient.Pipeline*"></a>
   <h4 id="Azure_Storage_Files_DirectoryClient_Pipeline" data-uid="Azure.Storage.Files.DirectoryClient.Pipeline">Pipeline</h4>
-  <div class="markdown level1 summary"><p>Gets the <see cref="!:HttpPipeline"></see> transport pipeline used to send
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="../Core/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a> transport pipeline used to send
 every request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -337,7 +337,7 @@ every request.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpPipeline</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -383,15 +383,15 @@ every request.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L235">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_Create_" data-uid="Azure.Storage.Files.DirectoryClient.Create*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">Create(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">Create(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new directory
+  <h4 id="Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.Create(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">Create(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Create_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">Create(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new directory
 at the specified <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Uri">Uri</a>.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory">https://docs.microsoft.com/rest/api/storageservices/create-directory</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageDirectoryInfo&gt; Create(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageDirectoryInfo&gt; Create(Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -428,8 +428,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageDirectoryInfo>"></see> describing the newly
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
 created directory.</p>
 </td>
       </tr>
@@ -447,15 +447,15 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L265">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_CreateAsync_" data-uid="Azure.Storage.Files.DirectoryClient.CreateAsync*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">CreateAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new directory
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">CreateAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new directory
 at the specified <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_Uri">Uri</a>.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory">https://docs.microsoft.com/rest/api/storageservices/create-directory</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageDirectoryInfo&gt;&gt; CreateAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageDirectoryInfo&gt;&gt; CreateAsync(Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -492,8 +492,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageDirectoryInfo>"></see> describing the newly
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
 created directory.</p>
 </td>
       </tr>
@@ -511,14 +511,14 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L1297">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_CreateFile_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFile*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFile_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFile(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateFile(String, Int64, Nullable&lt;FileHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFile_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFile(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateFile(String, Int64, Nullable&lt;FileHttpHeaders&gt;, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file">https://docs.microsoft.com/en-us/rest/api/storageservices/create-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;FileClient&gt; CreateFile(string fileName, long maxSize, FileHttpHeaders? httpHeaders = null, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;FileClient&gt; CreateFile(string fileName, long maxSize, FileHttpHeaders? httpHeaders = null, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -573,15 +573,15 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.FileClient.html">FileClient</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;FileClient>"></see> referencing the file.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.FileClient.html">FileClient</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the file.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Azure_Storage_Files_DirectoryClient_CreateFile_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
-To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -591,14 +591,14 @@ To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Az
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L1340">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFileAsync*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFileAsync(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateFileAsync(String, Int64, Nullable&lt;FileHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateFileAsync(System.String,System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateFileAsync(String, Int64, Nullable&lt;FileHttpHeaders&gt;, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file">https://docs.microsoft.com/en-us/rest/api/storageservices/create-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;FileClient&gt;&gt; CreateFileAsync(string fileName, long maxSize, FileHttpHeaders? httpHeaders = null, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;FileClient&gt;&gt; CreateFileAsync(string fileName, long maxSize, FileHttpHeaders? httpHeaders = null, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -653,15 +653,15 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.FileClient.html">FileClient</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;FileClient>"></see> referencing the file.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.FileClient.html">FileClient</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the file.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Azure_Storage_Files_DirectoryClient_CreateFileAsync_System_String_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
-To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -671,15 +671,15 @@ To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Az
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L1171">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectory*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectory(System.String,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSubdirectory(String, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">CreateSubdirectory(String, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectory(System.String,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSubdirectory(String, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectory_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">CreateSubdirectory(String, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new
 subdirectory under this directory.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory">https://docs.microsoft.com/rest/api/storageservices/create-directory</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;DirectoryClient&gt; CreateSubdirectory(string subdirectoryName, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;DirectoryClient&gt; CreateSubdirectory(string subdirectoryName, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -722,8 +722,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;DirectoryClient>"></see> referencing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the
 newly created directory.</p>
 </td>
       </tr>
@@ -741,15 +741,15 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L1204">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectoryAsync*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectoryAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSubdirectoryAsync(String, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">CreateSubdirectoryAsync(String, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new
+  <h4 id="Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.CreateSubdirectoryAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateSubdirectoryAsync(String, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_CreateSubdirectoryAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">CreateSubdirectoryAsync(String, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation creates a new
 subdirectory under this directory.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-directory">https://docs.microsoft.com/rest/api/storageservices/create-directory</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;DirectoryClient&gt;&gt; CreateSubdirectoryAsync(string subdirectoryName, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;DirectoryClient&gt;&gt; CreateSubdirectoryAsync(string subdirectoryName, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -792,8 +792,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;DirectoryClient>"></see> referencing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DirectoryClient.html">DirectoryClient</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the
 newly created directory.</p>
 </td>
       </tr>
@@ -849,8 +849,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>A <see cref="!:Response"></see> if successful.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -904,8 +904,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>A <see cref="!:Response"></see> if successful.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -966,8 +966,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>A <see cref="!:Response"></see> on successfully deleting.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully deleting.</p>
 </td>
       </tr>
     </tbody>
@@ -1029,8 +1029,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>A <see cref="!:Response"></see> on successfully deleting.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully deleting.</p>
 </td>
       </tr>
     </tbody>
@@ -1092,8 +1092,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>A <see cref="!:Response"></see> if successful.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -1154,8 +1154,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>A <see cref="!:Response"></see> if successful.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -1241,8 +1241,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageClosedHandlesSegment>"></see> describing a
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing a
 segment of the handles closed.</p>
 </td>
       </tr>
@@ -1330,8 +1330,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageClosedHandlesSegment>"></see> describing a
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing a
 segment of the handles closed.</p>
 </td>
       </tr>
@@ -1449,8 +1449,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileItem.html">StorageFileItem</a>&gt;&gt;</td>
-        <td><p>An <see cref="!:IEnumerable&lt;T>"></see> of <see cref="!:Response&lt;StorageFileItem>"></see>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileItem.html">StorageFileItem</a>&gt;&gt;</td>
+        <td><p>An <see cref="!:IEnumerable&lt;T>"></see> of <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a>
 describing  the items in the directory.</p>
 </td>
       </tr>
@@ -1515,8 +1515,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AsyncCollection</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileItem.html">StorageFileItem</a>&gt;</td>
-        <td><p>A <see cref="!:AsyncCollection&lt;StorageFileItem>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileItem.html">StorageFileItem</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a> describing the
 items in the directory.</p>
 </td>
       </tr>
@@ -1581,8 +1581,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;&gt;</td>
-        <td><p>An <see cref="!:IEnumerable&lt;T>"></see> of <see cref="!:Response&lt;StorageHandle>"></see>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;&gt;</td>
+        <td><p>An <see cref="!:IEnumerable&lt;T>"></see> of <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a>
 describing the handles in the directory.</p>
 </td>
       </tr>
@@ -1647,8 +1647,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AsyncCollection</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;</td>
-        <td><p>A <see cref="!:AsyncCollection&lt;StorageHandle>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a> describing the
 handles on the directory.</p>
 </td>
       </tr>
@@ -1715,8 +1715,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryProperties.html">StorageDirectoryProperties</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageDirectoryProperties>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryProperties.html">StorageDirectoryProperties</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 directory and its properties.</p>
 </td>
       </tr>
@@ -1783,8 +1783,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryProperties.html">StorageDirectoryProperties</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageDirectoryProperties>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryProperties.html">StorageDirectoryProperties</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 directory and its properties.</p>
 </td>
       </tr>
@@ -1855,15 +1855,15 @@ pipeline as the <a class="xref" href="Azure.Storage.Files.DirectoryClient.html">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L582">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_SetMetadata_" data-uid="Azure.Storage.Files.DirectoryClient.SetMetadata*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadata(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadata(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets one or more
+  <h4 id="Azure_Storage_Files_DirectoryClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadata(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadata(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets one or more
 user-defined name-value pairs for the specified directory.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-directory-metadata">https://docs.microsoft.com/rest/api/storageservices/set-directory-metadata</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageDirectoryInfo&gt; SetMetadata(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageDirectoryInfo&gt; SetMetadata(Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1900,8 +1900,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageDirectoryInfo>"></see> if successful.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -1918,15 +1918,15 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/DirectoryClient.cs/#L611">View Source</a>
   </span>
   <a id="Azure_Storage_Files_DirectoryClient_SetMetadataAsync_" data-uid="Azure.Storage.Files.DirectoryClient.SetMetadataAsync*"></a>
-  <h4 id="Azure_Storage_Files_DirectoryClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets one or more
+  <h4 id="Azure_Storage_Files_DirectoryClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.DirectoryClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadataAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DirectoryClient.html#Azure_Storage_Files_DirectoryClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadataAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets one or more
 user-defined name-value pairs for the specified directory.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-directory-metadata">https://docs.microsoft.com/rest/api/storageservices/set-directory-metadata</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageDirectoryInfo&gt;&gt; SetMetadataAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageDirectoryInfo&gt;&gt; SetMetadataAsync(Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1963,8 +1963,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageDirectoryInfo>"></see> if successful.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageDirectoryInfo.html">StorageDirectoryInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> if successful.</p>
 </td>
       </tr>
     </tbody>
@@ -1973,6 +1973,25 @@ notifications that the operation should be cancelled.</p>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
 </article>
           </div>
           

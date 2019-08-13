@@ -317,7 +317,7 @@ applied to every request.</p>
   </span>
   <a id="Azure_Storage_Files_FileClient_Pipeline_" data-uid="Azure.Storage.Files.FileClient.Pipeline*"></a>
   <h4 id="Azure_Storage_Files_FileClient_Pipeline" data-uid="Azure.Storage.Files.FileClient.Pipeline">Pipeline</h4>
-  <div class="markdown level1 summary"><p>Gets the <see cref="!:HttpPipeline"></see> transport pipeline used to send
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="../Core/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a> transport pipeline used to send
 every request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -335,7 +335,7 @@ every request.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpPipeline</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -425,8 +425,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>A <see cref="!:Response"></see> on successfully aborting.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully aborting.</p>
 </td>
       </tr>
     </tbody>
@@ -487,8 +487,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>A <see cref="!:Response"></see> on successfully aborting.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully aborting.</p>
 </td>
       </tr>
     </tbody>
@@ -505,14 +505,14 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L250">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_Create_" data-uid="Azure.Storage.Files.FileClient.Create*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_Create_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.Create(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">Create(Int64, Nullable&lt;FileHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_Create_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.Create(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">Create(Int64, Nullable&lt;FileHttpHeaders&gt;, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file">https://docs.microsoft.com/en-us/rest/api/storageservices/create-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileInfo&gt; Create(long maxSize, FileHttpHeaders? httpHeaders = null, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileInfo&gt; Create(long maxSize, FileHttpHeaders? httpHeaders = null, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -561,8 +561,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file.</p>
 </td>
       </tr>
@@ -570,7 +570,7 @@ state of the file.</p>
   </table>
   <h5 id="Azure_Storage_Files_FileClient_Create_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
-To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRange(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRange(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -580,14 +580,14 @@ To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Az
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L293">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_CreateAsync_" data-uid="Azure.Storage.Files.FileClient.CreateAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_CreateAsync_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.CreateAsync(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateAsync(Int64, Nullable&lt;FileHttpHeaders&gt;, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_CreateAsync_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.CreateAsync(System.Int64,System.Nullable{Azure.Storage.Files.Models.FileHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">CreateAsync(Int64, Nullable&lt;FileHttpHeaders&gt;, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Creates a new file or replaces an existing file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/create-file">https://docs.microsoft.com/en-us/rest/api/storageservices/create-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileInfo&gt;&gt; CreateAsync(long maxSize, FileHttpHeaders? httpHeaders = null, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileInfo&gt;&gt; CreateAsync(long maxSize, FileHttpHeaders? httpHeaders = null, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -636,8 +636,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file.</p>
 </td>
       </tr>
@@ -645,7 +645,7 @@ state of the file.</p>
   </table>
   <h5 id="Azure_Storage_Files_FileClient_CreateAsync_System_Int64_System_Nullable_Azure_Storage_Files_Models_FileHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method only initializes the file.
-To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+To add content, use <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -693,8 +693,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span></td>
-        <td><p>A <see cref="!:Response"></see> on successfully deleting.</p>
+        <td><a class="xref" href="../OtherApis/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully deleting.</p>
 </td>
       </tr>
     </tbody>
@@ -749,8 +749,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&gt;</td>
-        <td><p>A <see cref="!:Response"></see> on successfully deleting.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response.html">Response</a> on successfully deleting.</p>
 </td>
       </tr>
     </tbody>
@@ -761,20 +761,20 @@ a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_Download_HttpRange_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.Download(HttpRange%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_Download_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.Download(Azure.Core.Http.HttpRange%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L663">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_Download_" data-uid="Azure.Storage.Files.FileClient.Download*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_Download_HttpRange_System_Boolean_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.Download(HttpRange,System.Boolean,CancellationToken)">Download(HttpRange, Boolean, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_Download_HttpRange_System_Boolean_CancellationToken_">Download(HttpRange, Boolean, CancellationToken)</a> operation reads or downloads a file from the system, including its metadata and properties.</p>
+  <h4 id="Azure_Storage_Files_FileClient_Download_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.Download(Azure.Core.Http.HttpRange,System.Boolean,CancellationToken)">Download(HttpRange, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_Download_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken_">Download(HttpRange, Boolean, CancellationToken)</a> operation reads or downloads a file from the system, including its metadata and properties.</p>
 <p>For more information <a href="https://docs.microsoft.com/rest/api/storageservices/get-file">https://docs.microsoft.com/rest/api/storageservices/get-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileDownloadInfo&gt; Download(HttpRange range = null, bool rangeGetContentHash = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileDownloadInfo&gt; Download(HttpRange range = default(HttpRange), bool rangeGetContentHash = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -787,7 +787,7 @@ a failure occurs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpRange</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>Optional. Only download the bytes of the file in the specified
 range.  If not provided, download the entire file.</p>
@@ -823,34 +823,34 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileDownloadInfo.html">StorageFileDownloadInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileDownloadInfo>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileDownloadInfo.html">StorageFileDownloadInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 downloaded file.  <a class="xref" href="Azure.Storage.Files.Models.StorageFileDownloadInfo.html#Azure_Storage_Files_Models_StorageFileDownloadInfo_Content">Content</a> contains
 the file's data.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_Download_HttpRange_System_Boolean_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_Download_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_DownloadAsync_HttpRange_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.DownloadAsync(HttpRange%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_DownloadAsync_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.DownloadAsync(Azure.Core.Http.HttpRange%2CSystem.Boolean%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L704">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_DownloadAsync_" data-uid="Azure.Storage.Files.FileClient.DownloadAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_DownloadAsync_HttpRange_System_Boolean_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.DownloadAsync(HttpRange,System.Boolean,CancellationToken)">DownloadAsync(HttpRange, Boolean, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_DownloadAsync_HttpRange_System_Boolean_CancellationToken_">DownloadAsync(HttpRange, Boolean, CancellationToken)</a> operation reads or downloads a file from the system, including its metadata and properties.</p>
+  <h4 id="Azure_Storage_Files_FileClient_DownloadAsync_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.DownloadAsync(Azure.Core.Http.HttpRange,System.Boolean,CancellationToken)">DownloadAsync(HttpRange, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_DownloadAsync_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken_">DownloadAsync(HttpRange, Boolean, CancellationToken)</a> operation reads or downloads a file from the system, including its metadata and properties.</p>
 <p>For more information <a href="https://docs.microsoft.com/rest/api/storageservices/get-file">https://docs.microsoft.com/rest/api/storageservices/get-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileDownloadInfo&gt;&gt; DownloadAsync(HttpRange range = null, bool rangeGetContentHash = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileDownloadInfo&gt;&gt; DownloadAsync(HttpRange range = default(HttpRange), bool rangeGetContentHash = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -863,7 +863,7 @@ a failure occurs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpRange</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>Optional. Only download the bytes of the file in the specified
 range.  If not provided, download the entire file.</p>
@@ -899,15 +899,15 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileDownloadInfo.html">StorageFileDownloadInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileDownloadInfo>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileDownloadInfo.html">StorageFileDownloadInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 downloaded file.  <a class="xref" href="Azure.Storage.Files.Models.StorageFileDownloadInfo.html#Azure_Storage_Files_Models_StorageFileDownloadInfo_Content">Content</a> contains
 the file's data.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_DownloadAsync_HttpRange_System_Boolean_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_DownloadAsync_Azure_Core_Http_HttpRange_System_Boolean_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
@@ -982,8 +982,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageClosedHandlesSegment>"></see> describing a
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing a
 segment of the handles closed.</p>
 </td>
       </tr>
@@ -1064,8 +1064,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageClosedHandlesSegment>"></see> describing a
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageClosedHandlesSegment.html">StorageClosedHandlesSegment</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing a
 segment of the handles closed.</p>
 </td>
       </tr>
@@ -1124,8 +1124,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;&gt;</td>
-        <td><p>An <see cref="!:IEnumerable&lt;T>"></see> of <see cref="!:Response&lt;StorageHandle>"></see>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;&gt;</td>
+        <td><p>An <see cref="!:IEnumerable&lt;T>"></see> of <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a>
 describing the handles in the directory.</p>
 </td>
       </tr>
@@ -1184,8 +1184,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">AsyncCollection</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;</td>
-        <td><p>A <see cref="!:AsyncCollection&lt;StorageHandle>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageHandle.html">StorageHandle</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a> describing the
 handles on the file.</p>
 </td>
       </tr>
@@ -1250,8 +1250,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileProperties.html">StorageFileProperties</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileProperties>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileProperties.html">StorageFileProperties</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 file's properties.</p>
 </td>
       </tr>
@@ -1316,8 +1316,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileProperties.html">StorageFileProperties</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileProperties>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileProperties.html">StorageFileProperties</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 file's properties.</p>
 </td>
       </tr>
@@ -1329,13 +1329,13 @@ a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_GetRangeList_HttpRange_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.GetRangeList(HttpRange%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_GetRangeList_Azure_Core_Http_HttpRange_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.GetRangeList(Azure.Core.Http.HttpRange%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L1603">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_GetRangeList_" data-uid="Azure.Storage.Files.FileClient.GetRangeList*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_GetRangeList_HttpRange_System_String_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.GetRangeList(HttpRange,System.String,CancellationToken)">GetRangeList(HttpRange, String, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_GetRangeList_Azure_Core_Http_HttpRange_System_String_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.GetRangeList(Azure.Core.Http.HttpRange,System.String,CancellationToken)">GetRangeList(HttpRange, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Returns the list of valid ranges for a file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/list-ranges">https://docs.microsoft.com/en-us/rest/api/storageservices/list-ranges</a>.</p>
 </div>
@@ -1355,7 +1355,7 @@ a failure occurs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpRange</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>Optional. Specifies the range of bytes over which to list ranges, inclusively. If omitted, then all ranges for the file are returned.</p>
 </td>
@@ -1385,26 +1385,26 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileRangeInfo.html">StorageFileRangeInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileRangeInfo>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileRangeInfo.html">StorageFileRangeInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 valid ranges for this file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_GetRangeList_HttpRange_System_String_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_GetRangeList_Azure_Core_Http_HttpRange_System_String_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_GetRangeListAsync_HttpRange_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.GetRangeListAsync(HttpRange%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_GetRangeListAsync_Azure_Core_Http_HttpRange_System_String_CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.GetRangeListAsync(Azure.Core.Http.HttpRange%2CSystem.String%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L1637">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_GetRangeListAsync_" data-uid="Azure.Storage.Files.FileClient.GetRangeListAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_GetRangeListAsync_HttpRange_System_String_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.GetRangeListAsync(HttpRange,System.String,CancellationToken)">GetRangeListAsync(HttpRange, String, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_GetRangeListAsync_Azure_Core_Http_HttpRange_System_String_CancellationToken_" data-uid="Azure.Storage.Files.FileClient.GetRangeListAsync(Azure.Core.Http.HttpRange,System.String,CancellationToken)">GetRangeListAsync(HttpRange, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Returns the list of valid ranges for a file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/list-ranges">https://docs.microsoft.com/en-us/rest/api/storageservices/list-ranges</a>.</p>
 </div>
@@ -1424,7 +1424,7 @@ a failure occurs.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpRange</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>Optional. Specifies the range of bytes over which to list ranges, inclusively. If omitted, then all ranges for the file are returned.</p>
 </td>
@@ -1454,14 +1454,14 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileRangeInfo.html">StorageFileRangeInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileRangeInfo>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileRangeInfo.html">StorageFileRangeInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 valid ranges for this file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_GetRangeListAsync_HttpRange_System_String_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_GetRangeListAsync_Azure_Core_Http_HttpRange_System_String_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
@@ -1527,8 +1527,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file.</p>
 </td>
       </tr>
@@ -1600,8 +1600,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file.</p>
 </td>
       </tr>
@@ -1619,15 +1619,15 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L1270">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_SetMetadata_" data-uid="Azure.Storage.Files.FileClient.SetMetadata*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadata(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadata(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
+  <h4 id="Azure_Storage_Files_FileClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadata(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadata(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
 metadata for the specified file as one or more name-value pairs.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-file-metadata">https://docs.microsoft.com/rest/api/storageservices/set-file-metadata</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileInfo&gt; SetMetadata(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileInfo&gt; SetMetadata(Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1664,8 +1664,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the updated
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
 file.</p>
 </td>
       </tr>
@@ -1683,15 +1683,15 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L1300">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_SetMetadataAsync_" data-uid="Azure.Storage.Files.FileClient.SetMetadataAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadataAsync(System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
+  <h4 id="Azure_Storage_Files_FileClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">SetMetadataAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_">SetMetadataAsync(Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</a> operation sets user-defined
 metadata for the specified file as one or more name-value pairs.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-file-metadata">https://docs.microsoft.com/rest/api/storageservices/set-file-metadata</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileInfo&gt;&gt; SetMetadataAsync(System.Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileInfo&gt;&gt; SetMetadataAsync(Collections.Generic.IDictionary&lt;string, string&gt; metadata, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1728,8 +1728,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the updated
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileInfo.html">StorageFileInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the updated
 file.</p>
 </td>
       </tr>
@@ -1747,14 +1747,14 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L408">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_StartCopy_" data-uid="Azure.Storage.Files.FileClient.StartCopy*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_StartCopy_Uri_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.StartCopy(Uri,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">StartCopy(Uri, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_StartCopy_Uri_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.StartCopy(Uri,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">StartCopy(Uri, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Copies a blob or file to a destination file within the storage account.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/copy-file">https://docs.microsoft.com/rest/api/storageservices/copy-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileCopyInfo&gt; StartCopy(Uri sourceUri, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Response&lt;StorageFileCopyInfo&gt; StartCopy(Uri sourceUri, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1797,8 +1797,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileCopyInfo.html">StorageFileCopyInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileCopyInfo.html">StorageFileCopyInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file copy.</p>
 </td>
       </tr>
@@ -1816,14 +1816,14 @@ a failure occurs.</p>
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L442">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_StartCopyAsync_" data-uid="Azure.Storage.Files.FileClient.StartCopyAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_StartCopyAsync_Uri_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.StartCopyAsync(Uri,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">StartCopyAsync(Uri, System.Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <h4 id="Azure_Storage_Files_FileClient_StartCopyAsync_Uri_System_Collections_Generic_IDictionary_System_String_System_String__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.StartCopyAsync(Uri,System.Collections.Generic.IDictionary{System.String,System.String},CancellationToken)">StartCopyAsync(Uri, Collections.Generic.IDictionary&lt;String, String&gt;, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Copies a blob or file to a destination file within the storage account.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/copy-file">https://docs.microsoft.com/rest/api/storageservices/copy-file</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileCopyInfo&gt;&gt; StartCopyAsync(Uri sourceUri, System.Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;Response&lt;StorageFileCopyInfo&gt;&gt; StartCopyAsync(Uri sourceUri, Collections.Generic.IDictionary&lt;string, string&gt; metadata = null, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1866,8 +1866,8 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileCopyInfo.html">StorageFileCopyInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileInfo>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileCopyInfo.html">StorageFileCopyInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file copy.</p>
 </td>
       </tr>
@@ -1879,14 +1879,14 @@ a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.UploadRange(Azure.Storage.Files.Models.FileRangeWriteType%2CHttpRange%2CStream%2CSystem.Byte%5B%5D%2CIProgress%7BAzure.Storage.Common.StorageProgress%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.UploadRange(Azure.Storage.Files.Models.FileRangeWriteType%2CAzure.Core.Http.HttpRange%2CStream%2CSystem.Byte%5B%5D%2CIProgress%7BAzure.Storage.Common.StorageProgress%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L1406">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_UploadRange_" data-uid="Azure.Storage.Files.FileClient.UploadRange*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.UploadRange(Azure.Storage.Files.Models.FileRangeWriteType,HttpRange,Stream,System.Byte[],IProgress{Azure.Storage.Common.StorageProgress},CancellationToken)">UploadRange(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRange(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation writes
+  <h4 id="Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.UploadRange(Azure.Storage.Files.Models.FileRangeWriteType,Azure.Core.Http.HttpRange,Stream,System.Byte[],IProgress{Azure.Storage.Common.StorageProgress},CancellationToken)">UploadRange(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRange(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation writes
 <code data-dev-comment-type="paramref" class="paramref">content</code> to a <code data-dev-comment-type="paramref" class="paramref">range</code> of a file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-range">https://docs.microsoft.com/en-us/rest/api/storageservices/put-range</a></p>
 </div>
@@ -1912,7 +1912,7 @@ a failure occurs.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpRange</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>Specifies the range of bytes to be written. Both the start and end of the range must be specified.</p>
 </td>
@@ -1960,27 +1960,27 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileUploadInfo.html">StorageFileUploadInfo</a>&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileUploadInfo>"></see> describing the
+        <td><a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileUploadInfo.html">StorageFileUploadInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_UploadRange_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.UploadRangeAsync(Azure.Storage.Files.Models.FileRangeWriteType%2CHttpRange%2CStream%2CSystem.Byte%5B%5D%2CIProgress%7BAzure.Storage.Common.StorageProgress%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_.md&amp;value=---%0Auid%3A%20Azure.Storage.Files.FileClient.UploadRangeAsync(Azure.Storage.Files.Models.FileRangeWriteType%2CAzure.Core.Http.HttpRange%2CStream%2CSystem.Byte%5B%5D%2CIProgress%7BAzure.Storage.Common.StorageProgress%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/storage/Azure.Storage.Files/src/FileClient.cs/#L1462">View Source</a>
   </span>
   <a id="Azure_Storage_Files_FileClient_UploadRangeAsync_" data-uid="Azure.Storage.Files.FileClient.UploadRangeAsync*"></a>
-  <h4 id="Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.UploadRangeAsync(Azure.Storage.Files.Models.FileRangeWriteType,HttpRange,Stream,System.Byte[],IProgress{Azure.Storage.Common.StorageProgress},CancellationToken)">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation writes
+  <h4 id="Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_" data-uid="Azure.Storage.Files.FileClient.UploadRangeAsync(Azure.Storage.Files.Models.FileRangeWriteType,Azure.Core.Http.HttpRange,Stream,System.Byte[],IProgress{Azure.Storage.Common.StorageProgress},CancellationToken)">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.FileClient.html#Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken_">UploadRangeAsync(FileRangeWriteType, HttpRange, Stream, Byte[], IProgress&lt;StorageProgress&gt;, CancellationToken)</a> operation writes
 <code data-dev-comment-type="paramref" class="paramref">content</code> to a <code data-dev-comment-type="paramref" class="paramref">range</code> of a file.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-range">https://docs.microsoft.com/en-us/rest/api/storageservices/put-range</a></p>
 </div>
@@ -2006,7 +2006,7 @@ a failure occurs.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">HttpRange</span></td>
+        <td><a class="xref" href="../Core/Azure.Core.Http.HttpRange.html">HttpRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>Specifies the range of bytes to be written. Both the start and end of the range must be specified.</p>
 </td>
@@ -2054,14 +2054,14 @@ notifications that the operation should be cancelled.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">Response</span>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileUploadInfo.html">StorageFileUploadInfo</a>&gt;&gt;</td>
-        <td><p>A <see cref="!:Response&lt;StorageFileUploadInfo>"></see> describing the
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="../OtherApis/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.Models.StorageFileUploadInfo.html">StorageFileUploadInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../OtherApis/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
 state of the file.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken__remarks">Remarks</h5>
+  <h5 id="Azure_Storage_Files_FileClient_UploadRangeAsync_Azure_Storage_Files_Models_FileRangeWriteType_Azure_Core_Http_HttpRange_Stream_System_Byte___IProgress_Azure_Storage_Common_StorageProgress__CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A <a class="xref" href="Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
 a failure occurs.</p>
 </div>
@@ -2121,6 +2121,25 @@ class with an identical <a class="xref" href="Azure.Storage.Files.FileClient.htm
   <h5 id="Azure_Storage_Files_FileClient_WithSnapshot_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Pass null or empty string to remove the snapshot returning a URL to the base file.</p>
 </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
 </article>
           </div>
           

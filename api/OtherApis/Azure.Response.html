@@ -131,7 +131,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Stream ContentStream { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Stream? ContentStream { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +143,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Stream</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Stream</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -334,18 +334,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Response_TryGetHeader_System_String_System_String__.md&amp;value=---%0Auid%3A%20Azure.Response.TryGetHeader(System.String%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_Response_TryGetHeader_System_String_System_Nullable_System_String___.md&amp;value=---%0Auid%3A%20Azure.Response.TryGetHeader(System.String%2CSystem.Nullable%7BSystem.String%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/Response.cs/#L26">View Source</a>
   </span>
   <a id="Azure_Response_TryGetHeader_" data-uid="Azure.Response.TryGetHeader*"></a>
-  <h4 id="Azure_Response_TryGetHeader_System_String_System_String__" data-uid="Azure.Response.TryGetHeader(System.String,System.String@)">TryGetHeader(String, out String)</h4>
+  <h4 id="Azure_Response_TryGetHeader_System_String_System_Nullable_System_String___" data-uid="Azure.Response.TryGetHeader(System.String,System.Nullable{System.String}@)">TryGetHeader(String, out Nullable&lt;String&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool TryGetHeader(string name, out string value)</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract bool TryGetHeader(string name, out string? value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,7 +363,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -438,6 +438,18 @@
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
       <a class="xref" href="../Core/Azure.Core.ResponseExceptionExtensions.html#Azure_Core_ResponseExceptionExtensions_CreateRequestFailedExceptionAsync_Azure_Response_">ResponseExceptionExtensions.CreateRequestFailedExceptionAsync(Response)</a>
   </div>
   <div>
@@ -448,6 +460,12 @@
   </div>
   <div>
       <a class="xref" href="../Core/Azure.Core.ResponseExceptionExtensions.html#Azure_Core_ResponseExceptionExtensions_CreateRequestFailedException_Azure_Response_System_String_">ResponseExceptionExtensions.CreateRequestFailedException(Response, String)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
   </div>
 </article>
           </div>

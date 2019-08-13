@@ -79,6 +79,10 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">RequestFailedException</span></div>
+      <div class="level2"><a class="xref" href="../Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a></div>
+      <div class="level2"><a class="xref" href="../Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a></div>
+      <div class="level2"><a class="xref" href="../Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a></div>
+      <div class="level2"><a class="xref" href="../Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Azure.html">Azure</a></h6>
   <h6><strong>Assembly</strong>: Azure.Core.dll</h6>
@@ -127,18 +131,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_RequestFailedException__ctor_System_Int32_System_String_Exception_.md&amp;value=---%0Auid%3A%20Azure.RequestFailedException.%23ctor(System.Int32%2CSystem.String%2CException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Azure/azure-sdk-for-net/new/master/apiSpec/new?filename=Azure_RequestFailedException__ctor_System_Int32_System_String_System_Nullable_Exception__.md&amp;value=---%0Auid%3A%20Azure.RequestFailedException.%23ctor(System.Int32%2CSystem.String%2CSystem.Nullable%7BException%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/core/Azure.Core/src/FailedResponseException.cs/#L16">View Source</a>
   </span>
   <a id="Azure_RequestFailedException__ctor_" data-uid="Azure.RequestFailedException.#ctor*"></a>
-  <h4 id="Azure_RequestFailedException__ctor_System_Int32_System_String_Exception_" data-uid="Azure.RequestFailedException.#ctor(System.Int32,System.String,Exception)">RequestFailedException(Int32, String, Exception)</h4>
+  <h4 id="Azure_RequestFailedException__ctor_System_Int32_System_String_System_Nullable_Exception__" data-uid="Azure.RequestFailedException.#ctor(System.Int32,System.String,System.Nullable{Exception})">RequestFailedException(Int32, String, Nullable&lt;Exception&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RequestFailedException(int status, string message, Exception innerException)</code></pre>
+    <pre><code class="lang-csharp hljs">public RequestFailedException(int status, string message, Exception? innerException)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,7 +165,7 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Exception</span>&gt;</td>
         <td><span class="parametername">innerException</span></td>
         <td></td>
       </tr>
@@ -199,6 +203,25 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="../ApplicationModel.Configuration/Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.html#Azure_ApplicationModel_Configuration_AzureClientBuilderExtensions_AddEventHubClient__2___0___1_">AzureClientBuilderExtensions.AddEventHubClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <a class="xref" href="../KeyVault/Azure.Security.KeyVault.Secrets.AzureClientBuilderExtensions.html#Azure_Security_KeyVault_Secrets_AzureClientBuilderExtensions_AddSecretClient__2___0___1_">AzureClientBuilderExtensions.AddSecretClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.ApplicationModel.Configuration.AzureClientBuilderExtensions.AddConfigurationClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <a class="xref" href="../Storage/Azure.Storage.Blobs.AzureClientBuilderExtensions.html#Azure_Storage_Blobs_AzureClientBuilderExtensions_AddBlobServiceClient__2___0___1_">AzureClientBuilderExtensions.AddBlobServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddFileServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
+  <div>
+      <span class="xref">Azure.Storage.Blobs.AzureClientBuilderExtensions.AddQueueServiceClient&lt;TBuilder, TConfiguration&gt;(TBuilder, TConfiguration)</span>
+  </div>
 </article>
           </div>
           
