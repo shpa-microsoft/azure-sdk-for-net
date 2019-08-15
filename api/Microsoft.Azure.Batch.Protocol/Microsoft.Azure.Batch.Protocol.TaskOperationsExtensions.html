@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class TaskOperationsExtensions
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TaskOperationsExtensions
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions" class="text-break">Class TaskOperationsExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extension methods for TaskOperations.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">TaskOperationsExtensions</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Add_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Add*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Add_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Add(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter,Microsoft.Azure.Batch.Protocol.Models.TaskAddOptions)">Add(ITaskOperations, String, TaskAddParameter, TaskAddOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a Task to the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -111,22 +123,26 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to which the Task is to be added.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a></td>
         <td><span class="parametername">task</span></td>
-        <td></td>
+        <td><p>The Task to be added.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddOptions.html">TaskAddOptions</a></td>
         <td><span class="parametername">taskAddOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -145,11 +161,18 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Add_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The maximum lifetime of a Task from addition to completion is 180 days. If</p>
+<p>a Task has not completed within 180 days of being added it will be</p>
+<p>terminated by the Batch service and left in whatever state it was in at</p>
+<p>that time.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.AddAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.AddAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter,Microsoft.Azure.Batch.Protocol.Models.TaskAddOptions,System.Threading.CancellationToken)">AddAsync(ITaskOperations, String, TaskAddParameter, TaskAddOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a Task to the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -169,27 +192,32 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to which the Task is to be added.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a></td>
         <td><span class="parametername">task</span></td>
-        <td></td>
+        <td><p>The Task to be added.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddOptions.html">TaskAddOptions</a></td>
         <td><span class="parametername">taskAddOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -203,16 +231,23 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddHeaders.html">TaskAddHeaders</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddHeaders.html">TaskAddHeaders</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter_Microsoft_Azure_Batch_Protocol_Models_TaskAddOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The maximum lifetime of a Task from addition to completion is 180 days. If</p>
+<p>a Task has not completed within 180 days of being added it will be</p>
+<p>terminated by the Batch service and left in whatever state it was in at</p>
+<p>that time.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddCollection_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.AddCollection*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddCollection_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.AddCollection(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter},Microsoft.Azure.Batch.Protocol.Models.TaskAddCollectionOptions)">AddCollection(ITaskOperations, String, IList&lt;TaskAddParameter&gt;, TaskAddCollectionOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a collection of Tasks to the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,22 +266,30 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to which the Task collection is to be added.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a>&gt;</td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The collection of Tasks to add. The maximum count of Tasks is 100. The
+total serialized size of this collection must be less than 1MB. If it is
+greater than 1MB (for example if each Task has 100's of resource files or
+environment variables), the request will fail with code
+'RequestBodyTooLarge' and should be retried again with fewer Tasks.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddCollectionOptions.html">TaskAddCollectionOptions</a></td>
         <td><span class="parametername">taskAddCollectionOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -265,11 +308,29 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddCollection_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that each Task must have a unique ID. The Batch service may not return</p>
+<p>the results for each Task in the same order the Tasks were submitted in</p>
+<p>this request. If the server times out or the connection is closed during</p>
+<p>the request, the request may have been partially or fully processed, or not</p>
+<p>at all. In such cases, the user should re-issue the request. Note that it</p>
+<p>is up to the user to correctly handle failures when re-issuing a request.</p>
+<p>For example, you should use the same Task IDs during a retry so that if the</p>
+<p>prior operation succeeded, the retry will not create extra Tasks</p>
+<p>unexpectedly. If the response contains any Tasks which failed to add, a</p>
+<p>client can retry the request. In a retry, it is most efficient to resubmit</p>
+<p>only Tasks that failed to add, and to omit Tasks that were successfully</p>
+<p>added on the first attempt. The maximum lifetime of a Task from addition to</p>
+<p>completion is 180 days. If a Task has not completed within 180 days of</p>
+<p>being added it will be terminated by the Batch service and left in whatever</p>
+<p>state it was in at that time.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddCollectionAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.AddCollectionAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddCollectionAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.AddCollectionAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter},Microsoft.Azure.Batch.Protocol.Models.TaskAddCollectionOptions,System.Threading.CancellationToken)">AddCollectionAsync(ITaskOperations, String, IList&lt;TaskAddParameter&gt;, TaskAddCollectionOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a collection of Tasks to the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -289,27 +350,36 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job to which the Task collection is to be added.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddParameter.html">TaskAddParameter</a>&gt;</td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The collection of Tasks to add. The maximum count of Tasks is 100. The
+total serialized size of this collection must be less than 1MB. If it is
+greater than 1MB (for example if each Task has 100's of resource files or
+environment variables), the request will fail with code
+'RequestBodyTooLarge' and should be retried again with fewer Tasks.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddCollectionOptions.html">TaskAddCollectionOptions</a></td>
         <td><span class="parametername">taskAddCollectionOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,16 +393,34 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddCollectionResult.html">TaskAddCollectionResult</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskAddCollectionResult.html">TaskAddCollectionResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_AddCollectionAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_TaskAddParameter__Microsoft_Azure_Batch_Protocol_Models_TaskAddCollectionOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that each Task must have a unique ID. The Batch service may not return</p>
+<p>the results for each Task in the same order the Tasks were submitted in</p>
+<p>this request. If the server times out or the connection is closed during</p>
+<p>the request, the request may have been partially or fully processed, or not</p>
+<p>at all. In such cases, the user should re-issue the request. Note that it</p>
+<p>is up to the user to correctly handle failures when re-issuing a request.</p>
+<p>For example, you should use the same Task IDs during a retry so that if the</p>
+<p>prior operation succeeded, the retry will not create extra Tasks</p>
+<p>unexpectedly. If the response contains any Tasks which failed to add, a</p>
+<p>client can retry the request. In a retry, it is most efficient to resubmit</p>
+<p>only Tasks that failed to add, and to omit Tasks that were successfully</p>
+<p>added on the first attempt. The maximum lifetime of a Task from addition to</p>
+<p>completion is 180 days. If a Task has not completed within 180 days of</p>
+<p>being added it will be terminated by the Batch service and left in whatever</p>
+<p>state it was in at that time.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Delete_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Delete*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Delete_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Delete(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskDeleteOptions)">Delete(ITaskOperations, String, String, TaskDeleteOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes a Task from the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -351,22 +439,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job from which to delete the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to delete.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskDeleteOptions.html">TaskDeleteOptions</a></td>
         <td><span class="parametername">taskDeleteOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -385,11 +477,19 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Delete_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When a Task is deleted, all of the files in its directory on the Compute</p>
+<p>Node where it ran are also deleted (regardless of the retention time). For</p>
+<p>multi-instance Tasks, the delete Task operation applies synchronously to</p>
+<p>the primary task; subtasks and their files are then deleted asynchronously</p>
+<p>in the background.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_DeleteAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.DeleteAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_DeleteAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.DeleteAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskDeleteOptions,System.Threading.CancellationToken)">DeleteAsync(ITaskOperations, String, String, TaskDeleteOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deletes a Task from the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -409,27 +509,32 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job from which to delete the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to delete.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskDeleteOptions.html">TaskDeleteOptions</a></td>
         <td><span class="parametername">taskDeleteOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -443,16 +548,24 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskDeleteHeaders.html">TaskDeleteHeaders</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskDeleteHeaders.html">TaskDeleteHeaders</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_DeleteAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskDeleteOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When a Task is deleted, all of the files in its directory on the Compute</p>
+<p>Node where it ran are also deleted (regardless of the retention time). For</p>
+<p>multi-instance Tasks, the delete Task operation applies synchronously to</p>
+<p>the primary task; subtasks and their files are then deleted asynchronously</p>
+<p>in the background.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Get_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Get*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Get_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Get(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskGetOptions)">Get(ITaskOperations, String, String, TaskGetOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets information about the specified Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -471,22 +584,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job that contains the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to get information about.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskGetOptions.html">TaskGetOptions</a></td>
         <td><span class="parametername">taskGetOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -505,11 +622,17 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Get_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId, executionInfo and</p>
+<p>nodeInfo refer to the primary Task. Use the list subtasks API to retrieve</p>
+<p>information about subtasks.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_GetAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.GetAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_GetAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.GetAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskGetOptions,System.Threading.CancellationToken)">GetAsync(ITaskOperations, String, String, TaskGetOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets information about the specified Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -529,27 +652,32 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job that contains the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to get information about.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskGetOptions.html">TaskGetOptions</a></td>
         <td><span class="parametername">taskGetOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -563,16 +691,22 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTask.html">CloudTask</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTask.html">CloudTask</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_GetAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskGetOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId, executionInfo and</p>
+<p>nodeInfo refer to the primary Task. Use the list subtasks API to retrieve</p>
+<p>information about subtasks.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_List_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.List*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_List_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.List(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListOptions)">List(ITaskOperations, String, TaskListOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Tasks that are associated with the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -591,17 +725,20 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskListOptions.html">TaskListOptions</a></td>
         <td><span class="parametername">taskListOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -620,11 +757,17 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_List_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId, executionInfo and</p>
+<p>nodeInfo refer to the primary Task. Use the list subtasks API to retrieve</p>
+<p>information about subtasks.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListOptions,System.Threading.CancellationToken)">ListAsync(ITaskOperations, String, TaskListOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Tasks that are associated with the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -644,22 +787,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskListOptions.html">TaskListOptions</a></td>
         <td><span class="parametername">taskListOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -673,16 +820,22 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTask.html">CloudTask</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTask.html">CloudTask</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId, executionInfo and</p>
+<p>nodeInfo refer to the primary Task. Use the list subtasks API to retrieve</p>
+<p>information about subtasks.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListNext_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListNext*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListNext_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListNext(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListNextOptions)">ListNext(ITaskOperations, String, TaskListNextOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Tasks that are associated with the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -701,17 +854,20 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskListNextOptions.html">TaskListNextOptions</a></td>
         <td><span class="parametername">taskListNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -730,11 +886,17 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListNext_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId, executionInfo and</p>
+<p>nodeInfo refer to the primary Task. Use the list subtasks API to retrieve</p>
+<p>information about subtasks.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListNextAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListNextAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListNextAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListNextAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListNextOptions,System.Threading.CancellationToken)">ListNextAsync(ITaskOperations, String, TaskListNextOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the Tasks that are associated with the specified Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -754,22 +916,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nextPageLink</span></td>
-        <td></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskListNextOptions.html">TaskListNextOptions</a></td>
         <td><span class="parametername">taskListNextOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -783,16 +949,23 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTask.html">CloudTask</a>&gt;&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTask.html">CloudTask</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListNextAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListNextOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, information such as affinityId, executionInfo and</p>
+<p>nodeInfo refer to the primary Task. Use the list subtasks API to retrieve</p>
+<p>information about subtasks.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListSubtasks_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListSubtasks*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListSubtasks_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListSubtasks(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListSubtasksOptions)">ListSubtasks(ITaskOperations, String, String, TaskListSubtasksOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the subtasks that are associated with the specified
+multi-instance Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -811,22 +984,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskListSubtasksOptions.html">TaskListSubtasksOptions</a></td>
         <td><span class="parametername">taskListSubtasksOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -845,11 +1022,17 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Micro
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListSubtasks_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Task is not a multi-instance Task then this returns an empty</p>
+<p>collection.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListSubtasksAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListSubtasksAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListSubtasksAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ListSubtasksAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskListSubtasksOptions,System.Threading.CancellationToken)">ListSubtasksAsync(ITaskOperations, String, String, TaskListSubtasksOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Lists all of the subtasks that are associated with the specified
+multi-instance Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -869,27 +1052,32 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskListSubtasksOptions.html">TaskListSubtasksOptions</a></td>
         <td><span class="parametername">taskListSubtasksOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -903,16 +1091,22 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTaskListSubtasksResult.html">CloudTaskListSubtasksResult</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudTaskListSubtasksResult.html">CloudTaskListSubtasksResult</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ListSubtasksAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskListSubtasksOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Task is not a multi-instance Task then this returns an empty</p>
+<p>collection.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Reactivate_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Reactivate*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Reactivate_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Reactivate(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskReactivateOptions)">Reactivate(ITaskOperations, String, String, TaskReactivateOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reactivates a Task, allowing it to run again even if its retry count has
+been exhausted.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -931,22 +1125,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job containing the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to reactivate.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskReactivateOptions.html">TaskReactivateOptions</a></td>
         <td><span class="parametername">taskReactivateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -965,11 +1163,23 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Reactivate_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Reactivation makes a Task eligible to be retried again up to its maximum</p>
+<p>retry count. The Task's state is changed to active. As the Task is no</p>
+<p>longer in the completed state, any previous exit code or failure</p>
+<p>information is no longer available after reactivation. Each time a Task is</p>
+<p>reactivated, its retry count is reset to 0. Reactivation will fail for</p>
+<p>Tasks that are not completed or that previously completed successfully</p>
+<p>(with an exit code of 0). Additionally, it will fail if the Job has</p>
+<p>completed (or is terminating or deleting).</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ReactivateAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ReactivateAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ReactivateAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.ReactivateAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskReactivateOptions,System.Threading.CancellationToken)">ReactivateAsync(ITaskOperations, String, String, TaskReactivateOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reactivates a Task, allowing it to run again even if its retry count has
+been exhausted.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -989,27 +1199,32 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job containing the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to reactivate.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskReactivateOptions.html">TaskReactivateOptions</a></td>
         <td><span class="parametername">taskReactivateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1023,16 +1238,27 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskReactivateHeaders.html">TaskReactivateHeaders</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskReactivateHeaders.html">TaskReactivateHeaders</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_ReactivateAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskReactivateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Reactivation makes a Task eligible to be retried again up to its maximum</p>
+<p>retry count. The Task's state is changed to active. As the Task is no</p>
+<p>longer in the completed state, any previous exit code or failure</p>
+<p>information is no longer available after reactivation. Each time a Task is</p>
+<p>reactivated, its retry count is reset to 0. Reactivation will fail for</p>
+<p>Tasks that are not completed or that previously completed successfully</p>
+<p>(with an exit code of 0). Additionally, it will fail if the Job has</p>
+<p>completed (or is terminating or deleting).</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Terminate_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Terminate*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Terminate_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Terminate(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskTerminateOptions)">Terminate(ITaskOperations, String, String, TaskTerminateOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminates the specified Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1051,22 +1277,26 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job containing the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to terminate.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskTerminateOptions.html">TaskTerminateOptions</a></td>
         <td><span class="parametername">taskTerminateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1085,11 +1315,18 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Terminate_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the Task has been terminated, it moves to the completed state. For</p>
+<p>multi-instance Tasks, the terminate Task operation applies synchronously to</p>
+<p>the primary task; subtasks are then terminated asynchronously in the</p>
+<p>background.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_TerminateAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.TerminateAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_TerminateAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.TerminateAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskTerminateOptions,System.Threading.CancellationToken)">TerminateAsync(ITaskOperations, String, String, TaskTerminateOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Terminates the specified Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1109,27 +1346,32 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job containing the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to terminate.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskTerminateOptions.html">TaskTerminateOptions</a></td>
         <td><span class="parametername">taskTerminateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1143,16 +1385,23 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskTerminateHeaders.html">TaskTerminateHeaders</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskTerminateHeaders.html">TaskTerminateHeaders</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_TerminateAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskTerminateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the Task has been terminated, it moves to the completed state. For</p>
+<p>multi-instance Tasks, the terminate Task operation applies synchronously to</p>
+<p>the primary task; subtasks are then terminated asynchronously in the</p>
+<p>background.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Update_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Update*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_Update_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_Microsoft_Azure_Batch_Protocol_Models_TaskUpdateOptions_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.Update(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskConstraints,Microsoft.Azure.Batch.Protocol.Models.TaskUpdateOptions)">Update(ITaskOperations, String, String, TaskConstraints, TaskUpdateOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the properties of the specified Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1171,27 +1420,34 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job containing the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to update.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
-        <td></td>
+        <td><p>Constraints that apply to this Task. If omitted, the Task is given the
+default constraints. For multi-instance Tasks, updating the retention time
+applies only to the primary Task and not subtasks.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskUpdateOptions.html">TaskUpdateOptions</a></td>
         <td><span class="parametername">taskUpdateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1214,7 +1470,8 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
   
   <a id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_UpdateAsync_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.UpdateAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_TaskOperationsExtensions_UpdateAsync_Microsoft_Azure_Batch_Protocol_ITaskOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_Microsoft_Azure_Batch_Protocol_Models_TaskUpdateOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.TaskOperationsExtensions.UpdateAsync(Microsoft.Azure.Batch.Protocol.ITaskOperations,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskConstraints,Microsoft.Azure.Batch.Protocol.Models.TaskUpdateOptions,System.Threading.CancellationToken)">UpdateAsync(ITaskOperations, String, String, TaskConstraints, TaskUpdateOptions, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Updates the properties of the specified Task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1234,32 +1491,40 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
         <td><span class="parametername">operations</span></td>
-        <td></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">jobId</span></td>
-        <td></td>
+        <td><p>The ID of the Job containing the Task.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">taskId</span></td>
-        <td></td>
+        <td><p>The ID of the Task to update.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
-        <td></td>
+        <td><p>Constraints that apply to this Task. If omitted, the Task is given the
+default constraints. For multi-instance Tasks, updating the retention time
+applies only to the primary Task and not subtasks.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskUpdateOptions.html">TaskUpdateOptions</a></td>
         <td><span class="parametername">taskUpdateOptions</span></td>
-        <td></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>The cancellation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1273,7 +1538,7 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskUpdateHeaders.html">TaskUpdateHeaders</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.TaskUpdateHeaders.html">TaskUpdateHeaders</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1302,8 +1567,8 @@ public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.Protocol.Mode
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

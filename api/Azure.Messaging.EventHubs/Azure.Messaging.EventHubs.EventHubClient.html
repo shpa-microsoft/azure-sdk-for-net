@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class EventHubClient
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EventHubClient
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,16 +83,19 @@
   
   <h1 id="Azure_Messaging_EventHubs_EventHubClient" data-uid="Azure.Messaging.EventHubs.EventHubClient" class="text-break">Class EventHubClient
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The main point of interaction with the Azure Event Hubs service, the client offers a
+connection to a specific Event Hub within the Event Hubs namespace and offers operations
+for sending event data, receiving events, and inspecting the connected Event Hub.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventHubClient</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IAsyncDisposable</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></h6>
   <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
@@ -96,7 +109,8 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClient__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient__ctor" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor">EventHubClient()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -106,7 +120,8 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClient__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient__ctor_Azure_Messaging_EventHubs_EventHubClientOptions_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor(Azure.Messaging.EventHubs.EventHubClientOptions)">EventHubClient(EventHubClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -125,15 +140,22 @@
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a></td>
         <td><span class="parametername">clientOptions</span></td>
-        <td></td>
+        <td><p>A set of options to apply when configuring the client.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClient__ctor_Azure_Messaging_EventHubs_EventHubClientOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Because this is a non-public constructor, it is assumed that the <code data-dev-comment-type="paramref">clientOptions</code> passed are
+owned by this instance and are safe from changes made by consumers.  It is considered the responsibility of the
+caller to ensure that any needed cloning of options is performed.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventHubClient__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor(System.String)">EventHubClient(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -150,17 +172,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td></td>
+        <td><p>The connection string to use for connecting to the Event Hubs namespace; it is expected that the Event Hub name and the shared key properties are contained in this connection string.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the connection string is copied from the Event Hubs namespace, it will likely not contain the name of the desired Event Hub,</p>
+<p>which is needed.  In this case, the name can be added manually by adding &quot;;EntityPath=[[ EVENT HUB NAME ]]&quot; to the end of the</p>
+<p>connection string.  For example, &quot;;EntityPath=telemetry-hub&quot;.</p>
+<p>If you have defined a shared access policy directly on the Event Hub itself, then copying the connection string from that</p>
+<p>Event Hub will result in a connection string that contains the name.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventHubClient__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_Azure_Messaging_EventHubs_EventHubClientOptions_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor(System.String,Azure.Messaging.EventHubs.EventHubClientOptions)">EventHubClient(String, EventHubClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -177,26 +208,36 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td></td>
+        <td><p>The connection string to use for connecting to the Event Hubs namespace; it is expected that the Event Hub name and SAS token are contained in this connection string.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a></td>
         <td><span class="parametername">clientOptions</span></td>
-        <td></td>
+        <td><p>A set of options to apply when configuring the client.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_Azure_Messaging_EventHubs_EventHubClientOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the connection string is copied from the Event Hubs namespace, it will likely not contain the name of the desired Event Hub,</p>
+<p>which is needed.  In this case, the name can be added manually by adding &quot;;EntityPath=[[ EVENT HUB NAME ]]&quot; to the end of the</p>
+<p>connection string.  For example, &quot;;EntityPath=telemetry-hub&quot;.</p>
+<p>If you have defined a shared access policy directly on the Event Hub itself, then copying the connection string from that</p>
+<p>Event Hub will result in a connection string that contains the name.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventHubClient__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_System_String_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor(System.String,System.String)">EventHubClient(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EventHubClient (string connectionString, string eventHubPath);</code></pre>
+    <pre><code class="lang-csharp hljs">public EventHubClient (string connectionString, string eventHubName);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,26 +250,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td></td>
+        <td><p>The connection string to use for connecting to the Event Hubs namespace; it is expected that the shared key properties are contained in this connection string, but not the Event Hub name.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">eventHubPath</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventHubName</span></td>
+        <td><p>The name of the specific Event Hub to connect the client to.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the connection string is copied from the Event Hub itself, it will contain the name of the desired Event Hub,
+and can be used directly without passing the <code data-dev-comment-type="paramref">eventHubName</code>.  The name of the Event Hub should be
+passed only once, either as part of the connection string or separately.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventHubClient__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_System_String_Azure_Messaging_EventHubs_EventHubClientOptions_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor(System.String,System.String,Azure.Messaging.EventHubs.EventHubClientOptions)">EventHubClient(String, String, EventHubClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EventHubClient (string connectionString, string eventHubPath, Azure.Messaging.EventHubs.EventHubClientOptions clientOptions);</code></pre>
+    <pre><code class="lang-csharp hljs">public EventHubClient (string connectionString, string eventHubName, Azure.Messaging.EventHubs.EventHubClientOptions clientOptions);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -241,31 +290,40 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">connectionString</span></td>
-        <td></td>
+        <td><p>The connection string to use for connecting to the Event Hubs namespace; it is expected that the Event Hub name and SAS token are contained in this connection string.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">eventHubPath</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventHubName</span></td>
+        <td><p>The name of the specific Event Hub to connect the client to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a></td>
         <td><span class="parametername">clientOptions</span></td>
-        <td></td>
+        <td><p>A set of options to apply when configuring the client.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_System_String_Azure_Messaging_EventHubs_EventHubClientOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the connection string is copied from the Event Hub itself, it will contain the name of the desired Event Hub,
+and can be used directly without passing the <code data-dev-comment-type="paramref">eventHubName</code>.  The name of the Event Hub should be
+passed only once, either as part of the connection string or separately.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventHubClient__ctor_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient__ctor_System_String_System_String_Azure_Core_TokenCredential_Azure_Messaging_EventHubs_EventHubClientOptions_" data-uid="Azure.Messaging.EventHubs.EventHubClient.#ctor(System.String,System.String,Azure.Core.TokenCredential,Azure.Messaging.EventHubs.EventHubClientOptions)">EventHubClient(String, String, TokenCredential, EventHubClientOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EventHubClient (string host, string eventHubPath, Azure.Core.TokenCredential credential, Azure.Messaging.EventHubs.EventHubClientOptions clientOptions = null);</code></pre>
+    <pre><code class="lang-csharp hljs">public EventHubClient (string host, string eventHubName, Azure.Core.TokenCredential credential, Azure.Messaging.EventHubs.EventHubClientOptions clientOptions = null);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -278,24 +336,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">host</span></td>
-        <td></td>
+        <td><p>The fully qualified host name for the Event Hubs namespace.  This is likely to be similar to <code data-dev-comment-type="c">{yournamespace}.servicebus.windows.net</code>.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">eventHubPath</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventHubName</span></td>
+        <td><p>The name of the specific Event Hub to connect the client to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
         <td><span class="parametername">credential</span></td>
-        <td></td>
+        <td><p>The Azure managed identity credential to use for authorization.  Access controls may be specified by the Event Hubs namespace or the requested Event Hub, depending on Azure configuration.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubClientOptions.html">EventHubClientOptions</a></td>
         <td><span class="parametername">clientOptions</span></td>
-        <td></td>
+        <td><p>A set of options to apply when configuring the client.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -303,13 +365,15 @@
   </h3>
   
   
-  <a id="Azure_Messaging_EventHubs_EventHubClient_EventHubPath_" data-uid="Azure.Messaging.EventHubs.EventHubClient.EventHubPath*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubClient_EventHubPath" data-uid="Azure.Messaging.EventHubs.EventHubClient.EventHubPath">EventHubPath</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Azure_Messaging_EventHubs_EventHubClient_EventHubName_" data-uid="Azure.Messaging.EventHubs.EventHubClient.EventHubName*"></a>
+  <h4 id="Azure_Messaging_EventHubs_EventHubClient_EventHubName" data-uid="Azure.Messaging.EventHubs.EventHubClient.EventHubName">EventHubName</h4>
+  <div class="markdown level1 summary"><p>The name of the Event Hub that the client is connected to, specific to the
+Event Hubs namespace that contains it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string EventHubPath { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string EventHubName { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -321,7 +385,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_EventHubClient_RetryPolicy_" data-uid="Azure.Messaging.EventHubs.EventHubClient.RetryPolicy*"></a>
+  <h4 id="Azure_Messaging_EventHubs_EventHubClient_RetryPolicy" data-uid="Azure.Messaging.EventHubs.EventHubClient.RetryPolicy">RetryPolicy</h4>
+  <div class="markdown level1 summary"><p>The policy to use for determining retry behavior for when an operation fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Messaging.EventHubs.EventHubRetryPolicy RetryPolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubRetryPolicy.html">EventHubRetryPolicy</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -332,7 +422,8 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_Close_" data-uid="Azure.Messaging.EventHubs.EventHubClient.Close*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_Close_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubClient.Close(System.Threading.CancellationToken)">Close(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Closes the connection to the Event Hub instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,9 +440,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -359,7 +451,8 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_CloseAsync_" data-uid="Azure.Messaging.EventHubs.EventHubClient.CloseAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_CloseAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubClient.CloseAsync(System.Threading.CancellationToken)">CloseAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Closes the connection to the Event Hub instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -376,9 +469,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -392,8 +486,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A task to be resolved on when the operation has completed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,7 +496,17 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_CreateConsumer_" data-uid="Azure.Messaging.EventHubs.EventHubClient.CreateConsumer*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_CreateConsumer_System_String_System_String_Azure_Messaging_EventHubs_EventPosition_Azure_Messaging_EventHubs_EventHubConsumerOptions_" data-uid="Azure.Messaging.EventHubs.EventHubClient.CreateConsumer(System.String,System.String,Azure.Messaging.EventHubs.EventPosition,Azure.Messaging.EventHubs.EventHubConsumerOptions)">CreateConsumer(String, String, EventPosition, EventHubConsumerOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an Event Hub consumer responsible for reading <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> from a specific Event Hub partition,
+in the context of a specific consumer group.</p>
+<p>A consumer may be exclusive, which asserts ownership over the partition for the consumer
+group to ensure that only one consumer from that group is reading the from the partition.
+These exclusive consumers are sometimes referred to as &quot;Epoch Consumers.&quot;</p>
+<p>A consumer may also be non-exclusive, allowing multiple consumers from the same consumer
+group to be actively reading events from the partition.  These non-exclusive consumers are
+sometimes referred to as &quot;Non-epoch Consumers.&quot;</p>
+<p>Designating a consumer as exclusive may be specified in the <code data-dev-comment-type="paramref">consumerOptions</code>.
+By default, consumers are created as non-exclusive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -418,24 +523,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">consumerGroup</span></td>
-        <td></td>
+        <td><p>The name of the consumer group this consumer is associated with.  Events are read in the context of this group.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
-        <td></td>
+        <td><p>The identifier of the Event Hub partition from which events will be received.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
         <td><span class="parametername">eventPosition</span></td>
-        <td></td>
+        <td><p>The position within the partition where the consumer should begin reading events.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumerOptions.html">EventHubConsumerOptions</a></td>
         <td><span class="parametername">consumerOptions</span></td>
-        <td></td>
+        <td><p>The set of options to apply when creating the consumer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -450,7 +559,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a></td>
-        <td></td>
+        <td><p>An Event Hub consumer configured in the requested manner.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -458,7 +568,11 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_CreateProducer_" data-uid="Azure.Messaging.EventHubs.EventHubClient.CreateProducer*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_CreateProducer_Azure_Messaging_EventHubs_EventHubProducerOptions_" data-uid="Azure.Messaging.EventHubs.EventHubClient.CreateProducer(Azure.Messaging.EventHubs.EventHubProducerOptions)">CreateProducer(EventHubProducerOptions)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an Event Hub producer responsible for publishing <a class="xref" href="Azure.Messaging.EventHubs.EventData.html">EventData</a> to the
+Event Hub, either as a single item or grouped together in batches.  Depending on the
+<code data-dev-comment-type="paramref">producerOptions</code> specified, the producer may be created to allow event
+data to be automatically routed to an available partition or specific to a partition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -477,7 +591,8 @@
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducerOptions.html">EventHubProducerOptions</a></td>
         <td><span class="parametername">producerOptions</span></td>
-        <td></td>
+        <td><p>The set of options to apply when creating the producer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -492,15 +607,24 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a></td>
-        <td></td>
+        <td><p>An Event Hub producer configured in the requested manner.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClient_CreateProducer_Azure_Messaging_EventHubs_EventHubProducerOptions__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Allowing automatic routing of partitions is recommended when:</p>
+   <p>- The publishing of events needs to be highly available.</p><p>- The event data should be evenly distributed among all available partitions.</p>
+<p>If no partition is specified, the following rules are used for automatically selecting one:</p>
+   <p>- Distribute the events equally amongst all available partitions using a round-robin approach.</p><p>- If a partition becomes unavailable, the Event Hubs service will automatically detect it and forward the message to another available partition.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_DisposeAsync_" data-uid="Azure.Messaging.EventHubs.EventHubClient.DisposeAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_DisposeAsync" data-uid="Azure.Messaging.EventHubs.EventHubClient.DisposeAsync">DisposeAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Performs the task needed to clean up resources used by the <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>,
+including ensuring that the client itself has been closed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -517,8 +641,9 @@ public virtual System.Threading.Tasks.ValueTask DisposeAsync ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.ValueTask</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
+        <td><p>A task to be resolved on when the operation has completed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -526,7 +651,8 @@ public virtual System.Threading.Tasks.ValueTask DisposeAsync ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_Equals_" data-uid="Azure.Messaging.EventHubs.EventHubClient.Equals*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_Equals_System_Object_" data-uid="Azure.Messaging.EventHubs.EventHubClient.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -544,9 +670,10 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> to compare with this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -560,8 +687,9 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code data-dev-comment-type="c">true</code> if the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance; otherwise, <code data-dev-comment-type="c">false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -569,7 +697,8 @@ public override bool Equals (object obj);</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_GetHashCode_" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetHashCode*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_GetHashCode" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -586,8 +715,9 @@ public override int GetHashCode ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -595,7 +725,8 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_GetPartitionIdsAsync_" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetPartitionIdsAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_GetPartitionIdsAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetPartitionIdsAsync(System.Threading.CancellationToken)">GetPartitionIdsAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the set of identifiers for the partitions of an Event Hub.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -613,9 +744,10 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -629,16 +761,24 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>[]&gt;</td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]&gt;</td>
+        <td><p>The set of identifiers for the partitions within the Event Hub that this client is associated with.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClient_GetPartitionIdsAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is synonomous with invoking <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html#Azure_Messaging_EventHubs_EventHubClient_GetPropertiesAsync_System_Threading_CancellationToken_">GetPropertiesAsync(CancellationToken)</a> and reading the <a class="xref" href="../Azure.Messaging.EventHubs.Metadata/Azure.Messaging.EventHubs.Metadata.EventHubProperties.html#Azure_Messaging_EventHubs_Metadata_EventHubProperties_PartitionIds">PartitionIds</a>
+property that is returned. It is offered as a convienience for quick access to the set of partition identifiers for the associated Event Hub.
+No new or extended information is presented.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_GetPartitionPropertiesAsync_" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetPartitionPropertiesAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_GetPartitionPropertiesAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetPartitionPropertiesAsync(System.String,System.Threading.CancellationToken)">GetPartitionPropertiesAsync(String, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves information about a specific partiton for an Event Hub, including elements that describe the available
+events in the partition event stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -655,14 +795,16 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">partitionId</span></td>
-        <td></td>
+        <td><p>The unique identifier of a partition associated with the Event Hub.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -676,8 +818,9 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure.Messaging.EventHubs.Metadata/Azure.Messaging.EventHubs.Metadata.PartitionProperties.html">PartitionProperties</a>&gt;</td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure.Messaging.EventHubs.Metadata/Azure.Messaging.EventHubs.Metadata.PartitionProperties.html">PartitionProperties</a>&gt;</td>
+        <td><p>The set of information for the requested partition under the Event Hub this client is associated with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -685,7 +828,9 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_GetPropertiesAsync_" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetPropertiesAsync*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_GetPropertiesAsync_System_Threading_CancellationToken_" data-uid="Azure.Messaging.EventHubs.EventHubClient.GetPropertiesAsync(System.Threading.CancellationToken)">GetPropertiesAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves information about an Event Hub, including the number of partitions present
+and their identifiers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -702,9 +847,10 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>An optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> instance to signal the request to cancel the operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -718,8 +864,9 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="../Azure.Messaging.EventHubs.Metadata/Azure.Messaging.EventHubs.Metadata.EventHubProperties.html">EventHubProperties</a>&gt;</td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure.Messaging.EventHubs.Metadata/Azure.Messaging.EventHubs.Metadata.EventHubProperties.html">EventHubProperties</a>&gt;</td>
+        <td><p>The set of information for the Event Hub that this client is associated with.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -727,7 +874,8 @@ public virtual System.Threading.Tasks.Task&lt;string[]&gt; GetPartitionIdsAsync 
   
   <a id="Azure_Messaging_EventHubs_EventHubClient_ToString_" data-uid="Azure.Messaging.EventHubs.EventHubClient.ToString*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClient_ToString" data-uid="Azure.Messaging.EventHubs.EventHubClient.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the instance to string representation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -744,14 +892,15 @@ public override string ToString ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that represents this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">System.IAsyncDisposable</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">System.IAsyncDisposable</a>
   </div>
 </article>
           </div>
@@ -777,8 +926,8 @@ public override string ToString ();</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

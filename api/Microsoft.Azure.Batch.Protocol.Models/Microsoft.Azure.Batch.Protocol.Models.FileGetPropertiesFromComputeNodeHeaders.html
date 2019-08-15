@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class FileGetPropertiesFromComputeNodeHeaders
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FileGetPropertiesFromComputeNodeHeaders
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders" class="text-break">Class FileGetPropertiesFromComputeNodeHeaders
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines headers for GetPropertiesFromComputeNode operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">FileGetPropertiesFromComputeNodeHeaders</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
@@ -92,7 +103,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.#ctor">FileGetPropertiesFromComputeNodeHeaders()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+FileGetPropertiesFromComputeNodeHeaders class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +115,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders__ctor_System_Nullable_System_Guid__System_Nullable_System_Guid__System_String_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_Nullable_System_Boolean__System_String_System_String_System_String_System_Nullable_System_Int64__" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.#ctor(System.Nullable{System.Guid},System.Nullable{System.Guid},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.String,System.String,System.String,System.Nullable{System.Int64})">FileGetPropertiesFromComputeNodeHeaders(Nullable&lt;Guid&gt;, Nullable&lt;Guid&gt;, String, Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, Nullable&lt;Boolean&gt;, String, String, String, Nullable&lt;Int64&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the
+FileGetPropertiesFromComputeNodeHeaders class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,54 +134,79 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
         <td><span class="parametername">clientRequestId</span></td>
-        <td></td>
+        <td><p>The client-request-id provided by the
+client during the request. This will be returned only if the
+return-client-request-id parameter was set to true.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
         <td><span class="parametername">requestId</span></td>
-        <td></td>
+        <td><p>A unique identifier for the request that
+was made to the Batch service. If a request is consistently failing
+and you have verified that the request is properly formulated, you
+may use this value to report the error to Microsoft. In your
+report, include the value of this request ID, the approximate time
+that the request was made, the Batch Account against which the
+request was made, and the region that Account resides in.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">eTag</span></td>
-        <td></td>
+        <td><p>The ETag HTTP response header. This is an opaque
+string. You can use it to detect whether the resource has changed
+between requests. In particular, you can pass the ETag to one of
+the If-Modified-Since, If-Unmodified-Since, If-Match or
+If-None-Match headers.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">lastModified</span></td>
-        <td></td>
+        <td><p>The time at which the resource was last
+modified.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">ocpCreationTime</span></td>
-        <td></td>
+        <td><p>The file creation time.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">ocpBatchFileIsdirectory</span></td>
-        <td></td>
+        <td><p>Whether the object represents
+a directory.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">ocpBatchFileUrl</span></td>
-        <td></td>
+        <td><p>The URL of the file.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">ocpBatchFileMode</span></td>
-        <td></td>
+        <td><p>The file mode attribute in octal
+format.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">contentType</span></td>
-        <td></td>
+        <td><p>The content type of the file.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td><span class="parametername">contentLength</span></td>
-        <td></td>
+        <td><p>The length of the file.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -176,7 +216,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ClientRequestId">ClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the client-request-id provided by the client during
+the request. This will be returned only if the
+return-client-request-id parameter was set to true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -193,7 +236,7 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -202,7 +245,8 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ContentLength_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ContentLength*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ContentLength" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ContentLength">ContentLength</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the length of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -219,7 +263,7 @@ public Nullable&lt;long&gt; ContentLength { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -228,7 +272,8 @@ public Nullable&lt;long&gt; ContentLength { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ContentType_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ContentType*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ContentType" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ContentType">ContentType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the content type of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -245,7 +290,7 @@ public string ContentType { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -254,7 +299,12 @@ public string ContentType { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ETag_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ETag*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_ETag" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.ETag">ETag</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the ETag HTTP response header. This is an opaque
+string. You can use it to detect whether the resource has changed
+between requests. In particular, you can pass the ETag to one of
+the If-Modified-Since, If-Unmodified-Since, If-Match or
+If-None-Match headers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -271,7 +321,7 @@ public string ETag { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -280,7 +330,8 @@ public string ETag { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_LastModified_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.LastModified*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_LastModified" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.LastModified">LastModified</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the resource was last modified.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -298,7 +349,7 @@ public Nullable&lt;DateTime&gt; LastModified { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -307,7 +358,8 @@ public Nullable&lt;DateTime&gt; LastModified { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpBatchFileIsdirectory_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpBatchFileIsdirectory*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpBatchFileIsdirectory" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpBatchFileIsdirectory">OcpBatchFileIsdirectory</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether the object represents a directory.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -324,7 +376,7 @@ public Nullable&lt;bool&gt; OcpBatchFileIsdirectory { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -333,7 +385,8 @@ public Nullable&lt;bool&gt; OcpBatchFileIsdirectory { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpBatchFileMode_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpBatchFileMode*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpBatchFileMode" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpBatchFileMode">OcpBatchFileMode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the file mode attribute in octal format.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -350,7 +403,7 @@ public string OcpBatchFileMode { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -359,7 +412,8 @@ public string OcpBatchFileMode { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpBatchFileUrl_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpBatchFileUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpBatchFileUrl" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpBatchFileUrl">OcpBatchFileUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -376,7 +430,7 @@ public string OcpBatchFileUrl { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -385,7 +439,8 @@ public string OcpBatchFileUrl { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpCreationTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpCreationTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_OcpCreationTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.OcpCreationTime">OcpCreationTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the file creation time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -403,7 +458,7 @@ public Nullable&lt;DateTime&gt; OcpCreationTime { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -412,7 +467,14 @@ public Nullable&lt;DateTime&gt; OcpCreationTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_RequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.RequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeHeaders_RequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.RequestId">RequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a unique identifier for the request that was made to
+the Batch service. If a request is consistently failing and you
+have verified that the request is properly formulated, you may use
+this value to report the error to Microsoft. In your report,
+include the value of this request ID, the approximate time that the
+request was made, the Batch Account against which the request was
+made, and the region that Account resides in.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,7 +491,7 @@ public Nullable&lt;Guid&gt; RequestId { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -458,8 +520,8 @@ public Nullable&lt;Guid&gt; RequestId { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

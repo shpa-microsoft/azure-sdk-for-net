@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class ComputeNodeUser
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ComputeNodeUser
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_ComputeNodeUser" data-uid="Microsoft.Azure.Batch.ComputeNodeUser" class="text-break">Class ComputeNodeUser
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A user for a specific Azure Batch compute node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">ComputeNodeUser</span></div>
   </div>
   <div classs="implements">
@@ -96,7 +107,9 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_CustomBehaviors_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.CustomBehaviors*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_CustomBehaviors" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.CustomBehaviors">CustomBehaviors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of behaviors that modify or customize requests to the Batch service
+made via this <a class="xref" href="Microsoft.Azure.Batch.ComputeNodeUser.html">ComputeNodeUser</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -112,16 +125,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_ComputeNodeUser_CustomBehaviors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>These behaviors are inherited by child objects.</p>
+<p>Modifications are applied in the order of the collection. The last write wins.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_ExpiryTime_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.ExpiryTime*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_ExpiryTime" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.ExpiryTime">ExpiryTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the expiry time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -137,7 +155,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -146,7 +164,9 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_IsAdmin_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.IsAdmin*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_IsAdmin" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.IsAdmin">IsAdmin</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the administrative privilege level of the user account. The value of this property is ignored when
+UpdateUser is specified for the commit operation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,7 +182,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -171,7 +191,11 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_Name_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Name*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_Name" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the name. If AddUser is specified for the commit operation, the value of this property is the name
+of the local Windows account created. If UpdateUser is specified for the commit operation, the value of this
+property selects the local Windows account to modify. Changing this property does not rename the local Windows
+account on the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -187,7 +211,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -196,7 +220,8 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_Password_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Password*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_Password" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Password">Password</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the password.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,7 +237,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -221,7 +246,8 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_SshPublicKey_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.SshPublicKey*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_SshPublicKey" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.SshPublicKey">SshPublicKey</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the SSH public key that can be used for remote login to the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,18 +263,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_ComputeNodeUser_SshPublicKey_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The public key should be compatible with Open SSH encoding and should be base 64 encoded. This property 
+  can be specified only for Linux nodes. The Batch service will return an error if this property is set for pools 
+  created with <a class="xref" href="Microsoft.Azure.Batch.CloudServiceConfiguration.html">CloudServiceConfiguration</a> or <a class="xref" href="Microsoft.Azure.Batch.VirtualMachineConfiguration.html">VirtualMachineConfiguration</a> 
+  with Windows compute nodes.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_Commit_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Commit*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_Commit_Microsoft_Azure_Batch_ComputeNodeUserCommitSemantics_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Commit(Microsoft.Azure.Batch.ComputeNodeUserCommitSemantics,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">Commit(ComputeNodeUserCommitSemantics, IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Blocking call to create or update a user account on the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,12 +300,14 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ComputeNodeUserCommitSemantics.html">ComputeNodeUserCommitSemantics</a></td>
         <td><span class="parametername">addOrUpdate</span></td>
-        <td></td>
+        <td><p>Selects the type of commit operation to perform.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -280,7 +315,8 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_CommitAsync_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.CommitAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_CommitAsync_Microsoft_Azure_Batch_ComputeNodeUserCommitSemantics_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.CommitAsync(Microsoft.Azure.Batch.ComputeNodeUserCommitSemantics,System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">CommitAsync(ComputeNodeUserCommitSemantics, IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Begins an asynchronous call to create or update a user account on the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -299,17 +335,20 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.ComputeNodeUserCommitSemantics.html">ComputeNodeUserCommitSemantics</a></td>
         <td><span class="parametername">addOrUpdate</span></td>
-        <td></td>
+        <td><p>Selects the type of commit operation to perform.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,8 +362,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> object that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -332,7 +372,8 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_Delete_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Delete*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_Delete_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.Delete(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior})">Delete(IEnumerable&lt;BatchClientBehavior&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>call to delete the current user from the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,9 +390,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -359,7 +401,8 @@
   
   <a id="Microsoft_Azure_Batch_ComputeNodeUser_DeleteAsync_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.DeleteAsync*"></a>
   <h4 id="Microsoft_Azure_Batch_ComputeNodeUser_DeleteAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_BatchClientBehavior__System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.ComputeNodeUser.DeleteAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.BatchClientBehavior},System.Threading.CancellationToken)">DeleteAsync(IEnumerable&lt;BatchClientBehavior&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Begins an asyncrhonous call to delete the current user from the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -376,14 +419,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td><span class="parametername">additionalBehaviors</span></td>
-        <td></td>
+        <td><p>A collection of BatchClientBehavior instances that are applied after the CustomBehaviors on the current object.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> for controlling the lifetime of the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -397,8 +442,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> object that represents the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -430,8 +476,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class JobStatistics
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class JobStatistics
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_JobStatistics" data-uid="Microsoft.Azure.Batch.JobStatistics" class="text-break">Class JobStatistics
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Resource usage statistics for the job.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">JobStatistics</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_FailedTaskCount_" data-uid="Microsoft.Azure.Batch.JobStatistics.FailedTaskCount*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_FailedTaskCount" data-uid="Microsoft.Azure.Batch.JobStatistics.FailedTaskCount">FailedTaskCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total number of task failures in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -108,7 +120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -117,7 +129,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_KernelCpuTime_" data-uid="Microsoft.Azure.Batch.JobStatistics.KernelCpuTime*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_KernelCpuTime" data-uid="Microsoft.Azure.Batch.JobStatistics.KernelCpuTime">KernelCpuTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total kernel mode CPU time (per core) consumed by all tasks in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -133,7 +146,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -142,7 +155,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_LastUpdateTime_" data-uid="Microsoft.Azure.Batch.JobStatistics.LastUpdateTime*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_LastUpdateTime" data-uid="Microsoft.Azure.Batch.JobStatistics.LastUpdateTime">LastUpdateTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the time at which the statistics were last updated. All statistics are limited to the range between <a class="xref" href="Microsoft.Azure.Batch.JobStatistics.html#Microsoft_Azure_Batch_JobStatistics_StartTime">StartTime</a> and this value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -158,7 +172,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -167,7 +181,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_ReadIOGiB_" data-uid="Microsoft.Azure.Batch.JobStatistics.ReadIOGiB*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_ReadIOGiB" data-uid="Microsoft.Azure.Batch.JobStatistics.ReadIOGiB">ReadIOGiB</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total gibibytes of I/O read from disk by all tasks in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -183,7 +198,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -192,7 +207,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_ReadIOps_" data-uid="Microsoft.Azure.Batch.JobStatistics.ReadIOps*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_ReadIOps" data-uid="Microsoft.Azure.Batch.JobStatistics.ReadIOps">ReadIOps</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total number of disk read operations made by all tasks in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,7 +224,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -217,7 +233,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_StartTime_" data-uid="Microsoft.Azure.Batch.JobStatistics.StartTime*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_StartTime" data-uid="Microsoft.Azure.Batch.JobStatistics.StartTime">StartTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the start time of the time range covered by the statistics.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -233,7 +250,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -242,7 +259,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_SucceededTaskCount_" data-uid="Microsoft.Azure.Batch.JobStatistics.SucceededTaskCount*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_SucceededTaskCount" data-uid="Microsoft.Azure.Batch.JobStatistics.SucceededTaskCount">SucceededTaskCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total number of tasks successfully completed in the job during the given time range.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -258,7 +276,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -267,7 +285,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_TaskRetryCount_" data-uid="Microsoft.Azure.Batch.JobStatistics.TaskRetryCount*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_TaskRetryCount" data-uid="Microsoft.Azure.Batch.JobStatistics.TaskRetryCount">TaskRetryCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total number of task retries in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,7 +302,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -292,7 +311,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_Url_" data-uid="Microsoft.Azure.Batch.JobStatistics.Url*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_Url" data-uid="Microsoft.Azure.Batch.JobStatistics.Url">Url</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the URL of the job statistics.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -308,7 +328,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -317,7 +337,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_UserCpuTime_" data-uid="Microsoft.Azure.Batch.JobStatistics.UserCpuTime*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_UserCpuTime" data-uid="Microsoft.Azure.Batch.JobStatistics.UserCpuTime">UserCpuTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total user mode CPU time (per core) consumed by all tasks in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -333,7 +354,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -342,7 +363,10 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_WaitTime_" data-uid="Microsoft.Azure.Batch.JobStatistics.WaitTime*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_WaitTime" data-uid="Microsoft.Azure.Batch.JobStatistics.WaitTime">WaitTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total wait time of all tasks in the job. The wait time for a task is defined as the elapsed time between
+the creation of the task and the start of task execution. (If the task is retried due to failures, the wait time
+is the time to the most recent task execution.)</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -358,16 +382,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_JobStatistics_WaitTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is only reported in the account lifetime statistics.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_JobStatistics_WallClockTime_" data-uid="Microsoft.Azure.Batch.JobStatistics.WallClockTime*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_WallClockTime" data-uid="Microsoft.Azure.Batch.JobStatistics.WallClockTime">WallClockTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total elapsed time.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -383,7 +411,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -392,7 +420,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_WriteIOGiB_" data-uid="Microsoft.Azure.Batch.JobStatistics.WriteIOGiB*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_WriteIOGiB" data-uid="Microsoft.Azure.Batch.JobStatistics.WriteIOGiB">WriteIOGiB</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total gibibytes of I/O written to disk by all tasks in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -408,7 +437,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -417,7 +446,8 @@
   
   <a id="Microsoft_Azure_Batch_JobStatistics_WriteIOps_" data-uid="Microsoft.Azure.Batch.JobStatistics.WriteIOps*"></a>
   <h4 id="Microsoft_Azure_Batch_JobStatistics_WriteIOps" data-uid="Microsoft.Azure.Batch.JobStatistics.WriteIOps">WriteIOps</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the total number of disk write operations made by all tasks in the job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -433,7 +463,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -462,8 +492,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

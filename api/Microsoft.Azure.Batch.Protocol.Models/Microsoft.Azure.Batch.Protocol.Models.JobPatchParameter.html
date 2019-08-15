@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class JobPatchParameter
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class JobPatchParameter
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter" class="text-break">Class JobPatchParameter
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The set of changes to be made to a Job.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">JobPatchParameter</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.#ctor">JobPatchParameter()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobPatchParameter class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter__ctor_System_Nullable_System_Int32__System_Nullable_Microsoft_Azure_Batch_Protocol_Models_OnAllTasksComplete__Microsoft_Azure_Batch_Protocol_Models_JobConstraints_Microsoft_Azure_Batch_Protocol_Models_PoolInformation_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_MetadataItem__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.#ctor(System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete},Microsoft.Azure.Batch.Protocol.Models.JobConstraints,Microsoft.Azure.Batch.Protocol.Models.PoolInformation,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.MetadataItem})">JobPatchParameter(Nullable&lt;Int32&gt;, Nullable&lt;OnAllTasksComplete&gt;, JobConstraints, PoolInformation, IList&lt;MetadataItem&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobPatchParameter class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,29 +132,39 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">priority</span></td>
-        <td></td>
+        <td><p>The priority of the Job.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete.html">OnAllTasksComplete</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete.html">OnAllTasksComplete</a>&gt;</td>
         <td><span class="parametername">onAllTasksComplete</span></td>
-        <td></td>
+        <td><p>The action the Batch service
+should take when all Tasks in the Job are in the completed
+state.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.JobConstraints.html">JobConstraints</a></td>
         <td><span class="parametername">constraints</span></td>
-        <td></td>
+        <td><p>The execution constraints for the
+Job.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.PoolInformation.html">PoolInformation</a></td>
         <td><span class="parametername">poolInfo</span></td>
-        <td></td>
+        <td><p>The Pool on which the Batch service runs the
+Job's Tasks.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.MetadataItem.html">MetadataItem</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.MetadataItem.html">MetadataItem</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
-        <td></td>
+        <td><p>A list of name-value pairs associated with
+the Job as metadata.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,7 +174,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Constraints_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.Constraints*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Constraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.Constraints">Constraints</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the execution constraints for the Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,11 +197,16 @@ public Microsoft.Azure.Batch.Protocol.Models.JobConstraints Constraints { get; s
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Constraints_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the existing execution constraints are left unchanged.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Metadata_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.Metadata*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Metadata" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.Metadata">Metadata</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of name-value pairs associated with the Job as
+metadata.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -194,16 +223,21 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.MetadataItem.html">MetadataItem</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.MetadataItem.html">MetadataItem</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Metadata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the existing Job metadata is left unchanged.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_OnAllTasksComplete_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.OnAllTasksComplete*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_OnAllTasksComplete" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.OnAllTasksComplete">OnAllTasksComplete</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the action the Batch service should take when all
+Tasks in the Job are in the completed state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,16 +254,27 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete.html">OnAllTasksComplete</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete.html">OnAllTasksComplete</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_OnAllTasksComplete_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the completion behavior is left unchanged. You may not</p>
+<p>change the value from terminatejob to noaction - that is, once you</p>
+<p>have engaged automatic Job termination, you cannot turn it off</p>
+<p>again. If you try to do this, the request fails with an 'invalid</p>
+<p>property value' error response; if you are calling the REST API</p>
+<p>directly, the HTTP status code is 400 (Bad Request). Possible</p>
+<p>values include: 'noAction', 'terminateJob'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_PoolInfo_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.PoolInfo*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_PoolInfo" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.PoolInfo">PoolInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the Pool on which the Batch service runs the Job's
+Tasks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,11 +296,22 @@ public Microsoft.Azure.Batch.Protocol.Models.PoolInformation PoolInfo { get; set
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_PoolInfo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You may change the Pool for a Job only when the Job is disabled.</p>
+<p>The Patch Job call will fail if you include the poolInfo element</p>
+<p>and the Job is not disabled. If you specify an</p>
+<p>autoPoolSpecification in the poolInfo, only the keepAlive property</p>
+<p>of the autoPoolSpecification can be updated, and then only if the</p>
+<p>autoPoolSpecification has a poolLifetimeOption of Job (other job</p>
+<p>properties can be updated as normal). If omitted, the Job continues</p>
+<p>to run on its current Pool.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Priority_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.Priority*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Priority" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobPatchParameter.Priority">Priority</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the priority of the Job.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -272,11 +328,16 @@ public Nullable&lt;int&gt; Priority { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobPatchParameter_Priority_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Priority values can range from -1000 to 1000, with -1000 being the</p>
+<p>lowest priority and 1000 being the highest priority. If omitted,</p>
+<p>the priority of the Job is left unchanged.</p>
+</div>
 </article>
           </div>
           
@@ -301,8 +362,8 @@ public Nullable&lt;int&gt; Priority { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

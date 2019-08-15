@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class RetryPolicy
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RetryPolicy
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,13 @@
   
   <h1 id="Microsoft_Azure_EventHubs_RetryPolicy" data-uid="Microsoft.Azure.EventHubs.RetryPolicy" class="text-break">Class RetryPolicy
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents an abstraction for retrying messaging operations. Users should not
+implement this class, and instead should use one of the provided implementations.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">RetryPolicy</span></div>
       <div class="level2"><a class="xref" href="Microsoft.Azure.EventHubs.RetryExponential.html">RetryExponential</a></div>
   </div>
@@ -105,7 +117,8 @@
   
   <a id="Microsoft_Azure_EventHubs_RetryPolicy_Default_" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.Default*"></a>
   <h4 id="Microsoft_Azure_EventHubs_RetryPolicy_Default" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.Default">Default</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the default retry policy, <a class="xref" href="Microsoft.Azure.EventHubs.RetryExponential.html">RetryExponential</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -130,7 +143,8 @@
   
   <a id="Microsoft_Azure_EventHubs_RetryPolicy_NoRetry_" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.NoRetry*"></a>
   <h4 id="Microsoft_Azure_EventHubs_RetryPolicy_NoRetry" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.NoRetry">NoRetry</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the default retry policy, <a class="xref" href="Microsoft.Azure.EventHubs.RetryPolicy.html#Microsoft_Azure_EventHubs_RetryPolicy_NoRetry">NoRetry</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -157,7 +171,8 @@
   
   <a id="Microsoft_Azure_EventHubs_RetryPolicy_Clone_" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.Clone*"></a>
   <h4 id="Microsoft_Azure_EventHubs_RetryPolicy_Clone" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.Clone">Clone()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new copy of the current <a class="xref" href="Microsoft.Azure.EventHubs.RetryPolicy.html">RetryPolicy</a> and clones it into a new instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,7 +189,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.EventHubs.RetryPolicy.html">RetryPolicy</a></td>
-        <td></td>
+        <td><p>A new copy of <a class="xref" href="Microsoft.Azure.EventHubs.RetryPolicy.html">RetryPolicy</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -182,7 +198,8 @@
   
   <a id="Microsoft_Azure_EventHubs_RetryPolicy_GetNextRetryInterval_" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.GetNextRetryInterval*"></a>
   <h4 id="Microsoft_Azure_EventHubs_RetryPolicy_GetNextRetryInterval_System_Exception_System_TimeSpan_System_Int32_" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.GetNextRetryInterval(System.Exception,System.TimeSpan,System.Int32)">GetNextRetryInterval(Exception, TimeSpan, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the timespan for the next retry operation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,19 +216,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
         <td><span class="parametername">lastException</span></td>
-        <td></td>
+        <td><p>The last exception that was thrown</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">remainingTime</span></td>
-        <td></td>
+        <td><p>Remaining time for the cumulative timeout</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">retryCount</span></td>
-        <td></td>
+        <td><p>Current retry count</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -225,7 +245,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -234,7 +254,8 @@
   
   <a id="Microsoft_Azure_EventHubs_RetryPolicy_IsRetryableException_" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.IsRetryableException*"></a>
   <h4 id="Microsoft_Azure_EventHubs_RetryPolicy_IsRetryableException_System_Exception_" data-uid="Microsoft.Azure.EventHubs.RetryPolicy.IsRetryableException(System.Exception)">IsRetryableException(Exception)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether or not the exception can be retried.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,7 +272,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
         <td><span class="parametername">exception</span></td>
         <td></td>
       </tr>
@@ -267,8 +288,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>A bool indicating whether or not the operation can be retried.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -293,22 +315,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
         <td><span class="parametername">lastException</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
         <td><span class="parametername">remainingTime</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">baseWaitTime</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">retryCount</span></td>
         <td></td>
       </tr>
@@ -324,7 +346,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -353,8 +375,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

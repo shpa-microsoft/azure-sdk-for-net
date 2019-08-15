@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class ExitOptions
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ExitOptions
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_ExitOptions" data-uid="Microsoft.Azure.Batch.ExitOptions" class="text-break">Class ExitOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>How the Batch service should respond to a particular exit condition.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">ExitOptions</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_ExitOptions__ctor_" data-uid="Microsoft.Azure.Batch.ExitOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitOptions__ctor" data-uid="Microsoft.Azure.Batch.ExitOptions.#ctor">ExitOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.ExitOptions.html">ExitOptions</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -104,7 +116,8 @@
   
   <a id="Microsoft_Azure_Batch_ExitOptions_DependencyAction_" data-uid="Microsoft.Azure.Batch.ExitOptions.DependencyAction*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitOptions_DependencyAction" data-uid="Microsoft.Azure.Batch.ExitOptions.DependencyAction">DependencyAction</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an action that the Batch service should take on tasks that depend on this task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -120,16 +133,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DependencyAction.html">DependencyAction</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DependencyAction.html">DependencyAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_ExitOptions_DependencyAction_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default is <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DependencyAction.html#Microsoft_Azure_Batch_Common_DependencyAction_Satisfy">Satisfy</a> for exit code 0, and <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.DependencyAction.html#Microsoft_Azure_Batch_Common_DependencyAction_Block">Block</a>
+for all other exit conditions. If the job's <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html#Microsoft_Azure_Batch_CloudJob_UsesTaskDependencies">UsesTaskDependencies</a> is false, you cannot
+add a task with this property set.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_ExitOptions_JobAction_" data-uid="Microsoft.Azure.Batch.ExitOptions.JobAction*"></a>
   <h4 id="Microsoft_Azure_Batch_ExitOptions_JobAction" data-uid="Microsoft.Azure.Batch.ExitOptions.JobAction">JobAction</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an action to take on the job containing the task, if the task completes with the given exit condition
+and the job's <a class="xref" href="Microsoft.Azure.Batch.CloudJob.html#Microsoft_Azure_Batch_CloudJob_OnTaskFailure">OnTaskFailure</a> property is <a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.OnTaskFailure.html#Microsoft_Azure_Batch_Common_OnTaskFailure_PerformExitOptionsJobAction">PerformExitOptionsJobAction</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -145,7 +165,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobAction.html">JobAction</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.JobAction.html">JobAction</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -174,8 +194,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

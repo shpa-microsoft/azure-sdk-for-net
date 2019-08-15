@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class BatchClient
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BatchClient
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,16 +83,17 @@
   
   <h1 id="Microsoft_Azure_Batch_BatchClient" data-uid="Microsoft.Azure.Batch.BatchClient" class="text-break">Class BatchClient
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A client for an Azure Batch account, used to access the Batch service.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">BatchClient</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
   <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
@@ -96,7 +107,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_ApplicationOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.ApplicationOperations*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_ApplicationOperations" data-uid="Microsoft.Azure.Batch.BatchClient.ApplicationOperations">ApplicationOperations</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_ApplicationOperations">ApplicationOperations</a> for performing application-related operations on the associated account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,7 +133,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_CertificateOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.CertificateOperations*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_CertificateOperations" data-uid="Microsoft.Azure.Batch.BatchClient.CertificateOperations">CertificateOperations</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_CertificateOperations">CertificateOperations</a> for performing certificate-related operations on the associated account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -146,7 +159,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_CustomBehaviors_" data-uid="Microsoft.Azure.Batch.BatchClient.CustomBehaviors*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_CustomBehaviors" data-uid="Microsoft.Azure.Batch.BatchClient.CustomBehaviors">CustomBehaviors</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a list of behaviors that modify or customize requests to the Batch service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,16 +176,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_BatchClient_CustomBehaviors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>These behaviors are inherited by child objects.</p>
+<p>Modifications are applied in the order of the collection. The last write wins.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_BatchClient_JobOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.JobOperations*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_JobOperations" data-uid="Microsoft.Azure.Batch.BatchClient.JobOperations">JobOperations</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_JobOperations">JobOperations</a> for performing job-related operations on the associated account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -196,7 +215,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_JobScheduleOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.JobScheduleOperations*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_JobScheduleOperations" data-uid="Microsoft.Azure.Batch.BatchClient.JobScheduleOperations">JobScheduleOperations</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_JobScheduleOperations">JobScheduleOperations</a> for performing job schedule-related operations on the associated account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,7 +241,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_PoolOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.PoolOperations*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_PoolOperations" data-uid="Microsoft.Azure.Batch.BatchClient.PoolOperations">PoolOperations</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_PoolOperations">PoolOperations</a> for performing pool-related operations on the associated account.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,7 +267,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_Utilities_" data-uid="Microsoft.Azure.Batch.BatchClient.Utilities*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_Utilities" data-uid="Microsoft.Azure.Batch.BatchClient.Utilities">Utilities</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_Utilities">Utilities</a> object containing utility methods for orchestrating multiple Batch operations.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -273,7 +295,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_Dispose_" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_Dispose" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Releases the unmanaged resources and disposes of the managed resources used by the <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -283,7 +306,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_Dispose_" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_Dispose_System_Boolean_" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose(System.Boolean)">Dispose(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Releases unmanaged resources used by the <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>, and optionally disposes of managed resources.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,9 +324,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">disposing</span></td>
-        <td></td>
+        <td><p>Indicates whether the object is being disposed or finalized.  If true, the object is
+being disposed and can dispose managed resource.  If false, the object is being finalized and should only
+release unmanaged resources.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -310,7 +337,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_Open_" data-uid="Microsoft.Azure.Batch.BatchClient.Open*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_Open_Microsoft_Azure_Batch_Auth_BatchSharedKeyCredentials_" data-uid="Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials)">Open(BatchSharedKeyCredentials)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an instance of <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -329,7 +357,8 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Auth/Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials.html">BatchSharedKeyCredentials</a></td>
         <td><span class="parametername">credentials</span></td>
-        <td></td>
+        <td><p>The Batch account credentials.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -344,7 +373,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a></td>
-        <td></td>
+        <td><p>An instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -352,7 +382,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_Open_" data-uid="Microsoft.Azure.Batch.BatchClient.Open*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_Open_Microsoft_Azure_Batch_Auth_BatchTokenCredentials_" data-uid="Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Auth.BatchTokenCredentials)">Open(BatchTokenCredentials)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an instance of <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -371,7 +402,8 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Auth/Microsoft.Azure.Batch.Auth.BatchTokenCredentials.html">BatchTokenCredentials</a></td>
         <td><span class="parametername">credentials</span></td>
-        <td></td>
+        <td><p>The Azure Active Directory Batch account credentials.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -386,7 +418,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a></td>
-        <td></td>
+        <td><p>An instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -394,7 +427,8 @@
   
   <a id="Microsoft_Azure_Batch_BatchClient_Open_" data-uid="Microsoft.Azure.Batch.BatchClient.Open*"></a>
   <h4 id="Microsoft_Azure_Batch_BatchClient_Open_Microsoft_Azure_Batch_Protocol_BatchServiceClient_" data-uid="Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Protocol.BatchServiceClient)">Open(BatchServiceClient)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Blocking call that creates an instance of <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a> associated with the specified <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -413,7 +447,8 @@
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a></td>
         <td><span class="parametername">restClient</span></td>
-        <td></td>
+        <td><p>The instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a> to use for all calls made to the Batch Service. It will not be disposed when BatchClient is disposed.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -428,13 +463,14 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a></td>
-        <td></td>
+        <td><p>An instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">System.IDisposable</span>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
 </article>
           </div>
@@ -460,8 +496,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

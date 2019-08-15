@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Struct BlobHttpHeaders
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct BlobHttpHeaders
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,16 @@
   
   <h1 id="Azure_Storage_Blobs_Models_BlobHttpHeaders" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders" class="text-break">Struct BlobHttpHeaders
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Standard HTTP properties supported by containers and blobs.
+These properties are represented as standard HTTP headers use standard
+names, as specified in the Header Field Definitions section 14 of the
+HTTP/1.1 protocol specification.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/setting-and-retrieving-properties-and-metadata-for-blob-resources"></a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a>&gt;</div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a>&gt;</div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Blobs.Models.html">Azure.Storage.Blobs.Models</a></h6>
   <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
@@ -91,7 +106,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_CacheControl_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.CacheControl*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_CacheControl" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.CacheControl">CacheControl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specify directives for caching mechanisms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -107,7 +123,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -116,7 +132,12 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentDisposition_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentDisposition*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentDisposition" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentDisposition">ContentDisposition</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Conveys additional information about how to process the response
+payload, and also can be used to attach additional metadata.  For
+example, if set to attachment, it indicates that the user-agent
+should not display the response, but instead show a Save As dialog
+with a filename other than the blob name specified.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -132,7 +153,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -141,7 +162,11 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentEncoding_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentEncoding*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentEncoding" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentEncoding">ContentEncoding</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies which content encodings have been applied to the blob.
+This value is returned to the client when the Get Blob operation
+is performed on the blob resource. The client can use this value
+when returned to decode the blob content.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -157,7 +182,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -166,7 +191,12 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentHash_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentHash*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentHash" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentHash">ContentHash</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>An MD5 hash of the blob content. This hash is used to verify the
+integrity of the blob during transport.  When this header is
+specified, the storage service checks the hash that has arrived
+with the one that was sent. If the two hashes do not match, the
+operation will fail with error code 400 (Bad Request).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -182,7 +212,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -191,7 +221,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentLanguage_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentLanguage*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentLanguage" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentLanguage">ContentLanguage</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies the natural languages used by this resource.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,7 +238,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -216,7 +247,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentType_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentType*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_ContentType" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.ContentType">ContentType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The MIME content type of the blob.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -232,7 +264,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -243,7 +275,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_Equals_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.Equals*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_Equals_Azure_Storage_Blobs_Models_BlobHttpHeaders_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.Equals(Azure.Storage.Blobs.Models.BlobHttpHeaders)">Equals(BlobHttpHeaders)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two BlobHttpHeaders instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -262,7 +295,8 @@
       <tr>
         <td><a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>The instance to compare to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -276,7 +310,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -285,7 +319,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_Equals_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.Equals*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_Equals_System_Object_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two BlobHttpHeaders instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -302,9 +337,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The instance to compare to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -318,8 +354,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -327,7 +364,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_GetHashCode_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.GetHashCode*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_GetHashCode" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get a hash code for the BlobHttpHeaders.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -343,8 +381,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Hash code for the BlobHttpHeaders.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -354,7 +393,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_op_Equality_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.op_Equality*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_op_Equality_Azure_Storage_Blobs_Models_BlobHttpHeaders_Azure_Storage_Blobs_Models_BlobHttpHeaders_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.op_Equality(Azure.Storage.Blobs.Models.BlobHttpHeaders,Azure.Storage.Blobs.Models.BlobHttpHeaders)">Equality(BlobHttpHeaders, BlobHttpHeaders)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two BlobHttpHeaders instances are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -373,12 +413,14 @@
       <tr>
         <td><a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a></td>
         <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><p>The first instance to compare.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a></td>
         <td><span class="parametername">right</span></td>
-        <td></td>
+        <td><p>The second instance to compare.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -392,8 +434,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,7 +444,8 @@
   
   <a id="Azure_Storage_Blobs_Models_BlobHttpHeaders_op_Inequality_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.op_Inequality*"></a>
   <h4 id="Azure_Storage_Blobs_Models_BlobHttpHeaders_op_Inequality_Azure_Storage_Blobs_Models_BlobHttpHeaders_Azure_Storage_Blobs_Models_BlobHttpHeaders_" data-uid="Azure.Storage.Blobs.Models.BlobHttpHeaders.op_Inequality(Azure.Storage.Blobs.Models.BlobHttpHeaders,Azure.Storage.Blobs.Models.BlobHttpHeaders)">Inequality(BlobHttpHeaders, BlobHttpHeaders)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check if two BlobHttpHeaders instances are not equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -420,12 +464,14 @@
       <tr>
         <td><a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a></td>
         <td><span class="parametername">left</span></td>
-        <td></td>
+        <td><p>The first instance to compare.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Azure.Storage.Blobs.Models.BlobHttpHeaders.html">BlobHttpHeaders</a></td>
         <td><span class="parametername">right</span></td>
-        <td></td>
+        <td><p>The second instance to compare.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -439,8 +485,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're not equal, false otherwise.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -472,8 +519,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

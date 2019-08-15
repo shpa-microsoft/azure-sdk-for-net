@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class ContainerConfiguration
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ContainerConfiguration
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration" class="text-break">Class ContainerConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The configuration for container-enabled Pools.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">ContainerConfiguration</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.#ctor">ContainerConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContainerConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration__ctor_System_Collections_Generic_IList_System_String__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ContainerRegistry__" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.#ctor(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ContainerRegistry})">ContainerConfiguration(IList&lt;String&gt;, IList&lt;ContainerRegistry&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ContainerConfiguration class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,14 +132,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">containerImageNames</span></td>
-        <td></td>
+        <td><p>The collection of container Image
+names.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ContainerRegistry.html">ContainerRegistry</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ContainerRegistry.html">ContainerRegistry</a>&gt;</td>
         <td><span class="parametername">containerRegistries</span></td>
-        <td></td>
+        <td><p>Additional private registries
+from which containers can be pulled.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -136,7 +153,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_ContainerImageNames_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.ContainerImageNames*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_ContainerImageNames" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.ContainerImageNames">ContainerImageNames</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the collection of container Image names.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -153,16 +171,23 @@ public System.Collections.Generic.IList&lt;string&gt; ContainerImageNames { get;
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_ContainerImageNames_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is the full Image reference, as would be specified to &quot;docker</p>
+<p>pull&quot;. An Image will be sourced from the default Docker registry</p>
+<p>unless the Image is fully qualified with an alternative registry.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_ContainerRegistries_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.ContainerRegistries*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_ContainerRegistries" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.ContainerRegistries">ContainerRegistries</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets additional private registries from which containers
+can be pulled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -179,11 +204,15 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ContainerRegistry.html">ContainerRegistry</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ContainerRegistry.html">ContainerRegistry</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_ContainerRegistries_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If any Images must be downloaded from a private registry which</p>
+<p>requires credentials, then those credentials must be provided here.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_Type_" data-uid="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.Type*"></a>
@@ -205,7 +234,7 @@ public static string Type { get; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -234,8 +263,8 @@ public static string Type { get; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

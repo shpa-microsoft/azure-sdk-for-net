@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class InboundNatPool
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class InboundNatPool
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_InboundNatPool" data-uid="Microsoft.Azure.Batch.InboundNatPool" class="text-break">Class InboundNatPool
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A inbound NAT pool that can be used to address specific ports on compute nodes in a Batch pool externally.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">InboundNatPool</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_InboundNatPool__ctor_" data-uid="Microsoft.Azure.Batch.InboundNatPool.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_InboundNatPool__ctor_System_String_Microsoft_Azure_Batch_Common_InboundEndpointProtocol_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IReadOnlyList_Microsoft_Azure_Batch_NetworkSecurityGroupRule__" data-uid="Microsoft.Azure.Batch.InboundNatPool.#ctor(System.String,Microsoft.Azure.Batch.Common.InboundEndpointProtocol,System.Int32,System.Int32,System.Int32,System.Collections.Generic.IReadOnlyList{Microsoft.Azure.Batch.NetworkSecurityGroupRule})">InboundNatPool(String, InboundEndpointProtocol, Int32, Int32, Int32, IReadOnlyList&lt;NetworkSecurityGroupRule&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.InboundNatPool.html">InboundNatPool</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -109,34 +121,42 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the endpoint.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.InboundEndpointProtocol.html">InboundEndpointProtocol</a></td>
         <td><span class="parametername">protocol</span></td>
-        <td></td>
+        <td><p>The protocol of the endpoint.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">backendPort</span></td>
-        <td></td>
+        <td><p>The port number on the compute node.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">frontendPortRangeStart</span></td>
-        <td></td>
+        <td><p>The first port number in the range of external ports that will be used to provide inbound access to the backendPort
+on individual compute nodes.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">frontendPortRangeEnd</span></td>
-        <td></td>
+        <td><p>The last port number in the range of external ports that will be used to provide inbound access to the backendPort
+on individual compute nodes.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.NetworkSecurityGroupRule.html">NetworkSecurityGroupRule</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.NetworkSecurityGroupRule.html">NetworkSecurityGroupRule</a>&gt;</td>
         <td><span class="parametername">networkSecurityGroupRules</span></td>
-        <td></td>
+        <td><p>A list of network security group rules that will be applied to the endpoint.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +166,8 @@
   
   <a id="Microsoft_Azure_Batch_InboundNatPool_BackendPort_" data-uid="Microsoft.Azure.Batch.InboundNatPool.BackendPort*"></a>
   <h4 id="Microsoft_Azure_Batch_InboundNatPool_BackendPort" data-uid="Microsoft.Azure.Batch.InboundNatPool.BackendPort">BackendPort</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the port number on the compute node.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -162,16 +183,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_InboundNatPool_BackendPort_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This must be unique within a Batch pool. Acceptable values are between 1 and 65535 except for 22, 3389, 29876</p>
+<p>and 29877 as these are reserved.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_InboundNatPool_FrontendPortRangeEnd_" data-uid="Microsoft.Azure.Batch.InboundNatPool.FrontendPortRangeEnd*"></a>
   <h4 id="Microsoft_Azure_Batch_InboundNatPool_FrontendPortRangeEnd" data-uid="Microsoft.Azure.Batch.InboundNatPool.FrontendPortRangeEnd">FrontendPortRangeEnd</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the last port number in the range of external ports that will be used to provide inbound access to the backendPort
+on individual compute nodes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -187,16 +214,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_InboundNatPool_FrontendPortRangeEnd_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Acceptable values range between 1 and 65534 except ports from 50000 to 55000 which are reserved by the Batch</p>
+<p>service. All ranges within a pool must be distinct and cannot overlap.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_InboundNatPool_FrontendPortRangeStart_" data-uid="Microsoft.Azure.Batch.InboundNatPool.FrontendPortRangeStart*"></a>
   <h4 id="Microsoft_Azure_Batch_InboundNatPool_FrontendPortRangeStart" data-uid="Microsoft.Azure.Batch.InboundNatPool.FrontendPortRangeStart">FrontendPortRangeStart</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the first port number in the range of external ports that will be used to provide inbound access to the
+backendPort on individual compute nodes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -212,16 +245,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_InboundNatPool_FrontendPortRangeStart_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Acceptable values range between 1 and 65534 except ports from 50000 to 55000 which are reserved. All ranges within</p>
+<p>a pool must be distinct and cannot overlap.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_InboundNatPool_Name_" data-uid="Microsoft.Azure.Batch.InboundNatPool.Name*"></a>
   <h4 id="Microsoft_Azure_Batch_InboundNatPool_Name" data-uid="Microsoft.Azure.Batch.InboundNatPool.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of the endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,16 +275,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_InboundNatPool_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The name must be unique within a Batch pool, can contain letters, numbers, underscores, periods, and hyphens.</p>
+<p>Names must start with a letter or number, must end with a letter, number, or underscore, and cannot exceed 77</p>
+<p>characters.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_InboundNatPool_NetworkSecurityGroupRules_" data-uid="Microsoft.Azure.Batch.InboundNatPool.NetworkSecurityGroupRules*"></a>
   <h4 id="Microsoft_Azure_Batch_InboundNatPool_NetworkSecurityGroupRules" data-uid="Microsoft.Azure.Batch.InboundNatPool.NetworkSecurityGroupRules">NetworkSecurityGroupRules</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a list of network security group rules that will be applied to the endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -262,16 +306,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.NetworkSecurityGroupRule.html">NetworkSecurityGroupRule</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.NetworkSecurityGroupRule.html">NetworkSecurityGroupRule</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_InboundNatPool_NetworkSecurityGroupRules_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The maximum number of rules that can be specified across all the endpoints on a pool is 25. If no network security</p>
+<p>group rules are specified, a default rule will be created to allow inbound access to the specified backendPort.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_InboundNatPool_Protocol_" data-uid="Microsoft.Azure.Batch.InboundNatPool.Protocol*"></a>
   <h4 id="Microsoft_Azure_Batch_InboundNatPool_Protocol" data-uid="Microsoft.Azure.Batch.InboundNatPool.Protocol">Protocol</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the protocol of the endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -316,8 +365,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

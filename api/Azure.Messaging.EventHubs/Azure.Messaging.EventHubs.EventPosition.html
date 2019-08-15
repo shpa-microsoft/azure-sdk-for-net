@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class EventPosition
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EventPosition
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,13 @@
   
   <h1 id="Azure_Messaging_EventHubs_EventPosition" data-uid="Azure.Messaging.EventHubs.EventPosition" class="text-break">Class EventPosition
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The position of events in an Event Hub partition, typically used in the creation of
+an <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventPosition</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></h6>
@@ -104,7 +116,10 @@
   
   <a id="Azure_Messaging_EventHubs_EventPosition_Earliest_" data-uid="Azure.Messaging.EventHubs.EventPosition.Earliest*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventPosition_Earliest" data-uid="Azure.Messaging.EventHubs.EventPosition.Earliest">Earliest</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Corresponds to the location of the first event present in the partition.  Use this
+position to begin receiving from the first event that was enqueued in the partition
+which has not expired due to the retention policy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -129,7 +144,10 @@
   
   <a id="Azure_Messaging_EventHubs_EventPosition_Latest_" data-uid="Azure.Messaging.EventHubs.EventPosition.Latest*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventPosition_Latest" data-uid="Azure.Messaging.EventHubs.EventPosition.Latest">Latest</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Corresponds to the end of the partition, where no more events are currently enqueued.  Use this
+position to begin receiving from the next event to be enqueued in the partition after an <a class="xref" href="Azure.Messaging.EventHubs.EventHubConsumer.html">EventHubConsumer</a>
+is created with this position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,7 +174,8 @@
   
   <a id="Azure_Messaging_EventHubs_EventPosition_Equals_" data-uid="Azure.Messaging.EventHubs.EventPosition.Equals*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventPosition_Equals_System_Object_" data-uid="Azure.Messaging.EventHubs.EventPosition.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,9 +193,10 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> to compare with this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -190,20 +210,23 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code data-dev-comment-type="c">true</code> if the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance; otherwise, <code data-dev-comment-type="c">false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTime_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime(System.DateTime)">FromEnqueuedTime(DateTime)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromEnqueuedTime_System_DateTimeOffset_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromEnqueuedTime(System.DateTimeOffset)">FromEnqueuedTime(DateTimeOffset)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to a specific date and time within the partition to begin seeking an event; the event enqueued after the
+requested <code data-dev-comment-type="paramref">enqueuedTime</code> will become the current position.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Azure.Messaging.EventHubs.EventPosition FromEnqueuedTime (DateTime enqueuedTimeUtc);</code></pre>
+    <pre><code class="lang-csharp hljs">public static Azure.Messaging.EventHubs.EventPosition FromEnqueuedTime (DateTimeOffset enqueuedTime);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -216,9 +239,10 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
-        <td><span class="parametername">enqueuedTimeUtc</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">enqueuedTime</span></td>
+        <td><p>The date and time, in UTC, from which the next available event should be chosen.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -233,19 +257,21 @@ public override bool Equals (object obj);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
+        <td><p>The position of the specified event.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
   <a id="Azure_Messaging_EventHubs_EventPosition_FromOffset_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromOffset*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int32_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromOffset(System.Int32)">FromOffset(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromOffset(System.Int64)">FromOffset(Int64)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the event in the partition at the provided offset, inclusive of that event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Azure.Messaging.EventHubs.EventPosition FromOffset (int offset);</code></pre>
+    <pre><code class="lang-csharp hljs">public static Azure.Messaging.EventHubs.EventPosition FromOffset (long offset);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -258,9 +284,10 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>The offset of an event with respect to its relative position in the partition.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -275,15 +302,22 @@ public override bool Equals (object obj);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
+        <td><p>The position of the specified event.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventPosition_FromOffset_System_Int64__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The offset is the relative position for event in the context of the stream.  The offset</p>
+<p>should not be considered a stable value, as the same offset may refer to a different event</p>
+<p>as events reach the age limit for retention and are no longer visible within the stream.</p>
+</div>
   
   
   <a id="Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromSequenceNumber*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventPosition_FromSequenceNumber_System_Int64_System_Boolean_" data-uid="Azure.Messaging.EventHubs.EventPosition.FromSequenceNumber(System.Int64,System.Boolean)">FromSequenceNumber(Int64, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Corresponds to the event in the partition having a specified sequence number associated with it.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,14 +334,16 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int64</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td><span class="parametername">sequenceNumber</span></td>
-        <td></td>
+        <td><p>The sequence number assigned to an event when it was enqueued in the partition.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">isInclusive</span></td>
-        <td></td>
+        <td><p>If true, the event with the <code data-dev-comment-type="paramref">sequenceNumber</code> is included; otherwise the next event in sequence will be received.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -322,7 +358,8 @@ public override bool Equals (object obj);</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="Azure.Messaging.EventHubs.EventPosition.html">EventPosition</a></td>
-        <td></td>
+        <td><p>The position of the specified event.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -330,7 +367,8 @@ public override bool Equals (object obj);</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventPosition_GetHashCode_" data-uid="Azure.Messaging.EventHubs.EventPosition.GetHashCode*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventPosition_GetHashCode" data-uid="Azure.Messaging.EventHubs.EventPosition.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -347,8 +385,9 @@ public override int GetHashCode ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -356,7 +395,8 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventPosition_ToString_" data-uid="Azure.Messaging.EventHubs.EventPosition.ToString*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventPosition_ToString" data-uid="Azure.Messaging.EventHubs.EventPosition.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the instance to string representation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -373,8 +413,9 @@ public override string ToString ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that represents this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -402,8 +443,8 @@ public override string ToString ();</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

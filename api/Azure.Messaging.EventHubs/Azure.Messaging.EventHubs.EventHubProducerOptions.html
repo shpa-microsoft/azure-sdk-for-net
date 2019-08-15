@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class EventHubProducerOptions
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EventHubProducerOptions
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,13 @@
   
   <h1 id="Azure_Messaging_EventHubs_EventHubProducerOptions" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions" class="text-break">Class EventHubProducerOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The set of options that can be specified when creating an <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a>
+to configure its behavior.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventHubProducerOptions</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></h6>
@@ -104,7 +116,11 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.PartitionId*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.PartitionId">PartitionId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The identifier of the Event Hub partition that the <a class="xref" href="Azure.Messaging.EventHubs.EventHubProducer.html">EventHubProducer</a> will be bound to,
+limiting it to sending events to only that partition.</p>
+<p>If the identifier is not specified, the Event Hubs service will be responsible for routing events that
+are sent to an available partition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -120,20 +136,30 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>If the producer wishes the events to be automatically to partitions, <code data-dev-comment-type="c">null</code>; otherwise, the identifier of the desired partition.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubProducerOptions_PartitionId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Allowing automatic routing of partitions is recommended when:</p>
+   <p>- The sending of events needs to be highly available.</p><p>- The event data should be evenly distributed among all available partitions.</p>
+<p>If no partition is specified, the following rules are used for automatically selecting one:</p>
+   <p>1) Distribute the events equally amongst all available partitions using a round-robin approach.</p><p>2) If a partition becomes unavailable, the Event Hubs service will automatically detect it and forward the message to another available partition.</p>
+</div>
   
   
-  <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_Retry_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.Retry*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_Retry" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.Retry">Retry</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.RetryOptions*"></a>
+  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_RetryOptions" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.RetryOptions">RetryOptions</h4>
+  <div class="markdown level1 summary"><p>The set of options to use for determining whether a failed operation should be retried and,
+if so, the amount of time to wait between retry attempts.  If not specified, the retry policy from
+the associcated <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a> will be used.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Azure.Messaging.EventHubs.Retry Retry { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Azure.Messaging.EventHubs.RetryOptions RetryOptions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,32 +171,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.Retry.html">Retry</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_Timeout_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.Timeout*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_Timeout" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.Timeout">Timeout</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Nullable&lt;TimeSpan&gt; Timeout { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><a class="xref" href="Azure.Messaging.EventHubs.RetryOptions.html">RetryOptions</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -181,7 +182,8 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_Equals_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.Equals*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_Equals_System_Object_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,9 +201,10 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> to compare with this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -215,8 +218,9 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code data-dev-comment-type="c">true</code> if the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance; otherwise, <code data-dev-comment-type="c">false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -224,7 +228,8 @@ public override bool Equals (object obj);</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_GetHashCode_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.GetHashCode*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_GetHashCode" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,8 +246,9 @@ public override int GetHashCode ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -250,7 +256,8 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_ToString_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.ToString*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_ToString" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the instance to string representation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,35 +274,9 @@ public override string ToString ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Azure_Messaging_EventHubs_EventHubProducerOptions_ValidateTimeout_" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.ValidateTimeout*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubProducerOptions_ValidateTimeout_System_Nullable_System_TimeSpan__" data-uid="Azure.Messaging.EventHubs.EventHubProducerOptions.ValidateTimeout(System.Nullable{System.TimeSpan})">ValidateTimeout(Nullable&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void ValidateTimeout (Nullable&lt;TimeSpan&gt; timeout);</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
-        <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that represents this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,8 +304,8 @@ public override string ToString ();</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

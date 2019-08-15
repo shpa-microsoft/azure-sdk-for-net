@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class OutputFileBlobContainerDestination
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class OutputFileBlobContainerDestination
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination" data-uid="Microsoft.Azure.Batch.OutputFileBlobContainerDestination" class="text-break">Class OutputFileBlobContainerDestination
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies a file upload destination within an Azure blob storage container.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">OutputFileBlobContainerDestination</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination__ctor_" data-uid="Microsoft.Azure.Batch.OutputFileBlobContainerDestination.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination__ctor_System_String_System_String_" data-uid="Microsoft.Azure.Batch.OutputFileBlobContainerDestination.#ctor(System.String,System.String)">OutputFileBlobContainerDestination(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.OutputFileBlobContainerDestination.html">OutputFileBlobContainerDestination</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -109,14 +121,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">containerUrl</span></td>
-        <td></td>
+        <td><p>The URL of the container within Azure Blob Storage to which to upload the file(s).</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">path</span></td>
-        <td></td>
+        <td><p>The destination blob or virtual directory within the Azure Storage container to which to upload the file(s).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -126,7 +140,8 @@
   
   <a id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination_ContainerUrl_" data-uid="Microsoft.Azure.Batch.OutputFileBlobContainerDestination.ContainerUrl*"></a>
   <h4 id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination_ContainerUrl" data-uid="Microsoft.Azure.Batch.OutputFileBlobContainerDestination.ContainerUrl">ContainerUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the URL of the container within Azure Blob Storage to which to upload the file(s).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -142,16 +157,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination_ContainerUrl_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The URL must include a Shared Access Signature (SAS) granting write permissions to the container.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination_Path_" data-uid="Microsoft.Azure.Batch.OutputFileBlobContainerDestination.Path*"></a>
   <h4 id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination_Path" data-uid="Microsoft.Azure.Batch.OutputFileBlobContainerDestination.Path">Path</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the destination blob or virtual directory within the Azure Storage container to which to upload the file(s).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,11 +186,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_OutputFileBlobContainerDestination_Path_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Microsoft.Azure.Batch.OutputFile.html#Microsoft_Azure_Batch_OutputFile_FilePattern">FilePattern</a> refers to a specific file (i.e. it contains no wildcards), then 
+  this is the name of the blob to which to upload that file.</p>
+<p>If <a class="xref" href="Microsoft.Azure.Batch.OutputFile.html#Microsoft_Azure_Batch_OutputFile_FilePattern">FilePattern</a> 
+  contains wildcards (and may therefore match multiple files), then this then this is the name of the blob virtual 
+  directory (which is prepended to each blob name) to which to upload the file(s).</p>
+<p>If omitted, file(s) 
+  are uploaded to the root of the container with a blob name matching their file name.</p>
+</div>
 </article>
           </div>
           
@@ -196,8 +224,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

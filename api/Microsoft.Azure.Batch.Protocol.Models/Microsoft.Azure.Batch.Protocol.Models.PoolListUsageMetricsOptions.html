@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class PoolListUsageMetricsOptions
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PoolListUsageMetricsOptions
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions" class="text-break">Class PoolListUsageMetricsOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Additional parameters for ListUsageMetrics operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">PoolListUsageMetricsOptions</span></div>
   </div>
   <div classs="implements">
@@ -98,7 +109,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.#ctor">PoolListUsageMetricsOptions()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the PoolListUsageMetricsOptions
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -108,7 +121,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions__ctor_System_Nullable_System_DateTime__System_Nullable_System_DateTime__System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Guid__System_Nullable_System_Boolean__System_Nullable_System_DateTime__" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.#ctor(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Guid},System.Nullable{System.Boolean},System.Nullable{System.DateTime})">PoolListUsageMetricsOptions(Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Guid&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;DateTime&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the PoolListUsageMetricsOptions
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -125,44 +140,68 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">startTime</span></td>
-        <td></td>
+        <td><p>The earliest time from which to include
+metrics. This must be at least two and a half hours before the
+current time. If not specified this defaults to the start time of
+the last aggregation interval currently available.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">endTime</span></td>
-        <td></td>
+        <td><p>The latest time from which to include
+metrics. This must be at least two hours before the current time.
+If not specified this defaults to the end time of the last
+aggregation interval currently available.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">filter</span></td>
-        <td></td>
+        <td><p>An OData $filter clause. For more information
+on constructing this filter, see
+<a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-account-usage-metrics">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-account-usage-metrics</a>.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">maxResults</span></td>
-        <td></td>
+        <td><p>The maximum number of items to return in
+the response. A maximum of 1000 results will be returned.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td><span class="parametername">timeout</span></td>
-        <td></td>
+        <td><p>The maximum time that the server can spend
+processing the request, in seconds. The default is 30
+seconds.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
         <td><span class="parametername">clientRequestId</span></td>
-        <td></td>
+        <td><p>The caller-generated request
+identity, in the form of a GUID with no decoration such as curly
+braces, e.g. 9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">returnClientRequestId</span></td>
-        <td></td>
+        <td><p>Whether the server should
+return the client-request-id in the response.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">ocpDate</span></td>
-        <td></td>
+        <td><p>The time the request was issued. Client
+libraries typically set this to the current system clock time; set
+it explicitly if you are calling the REST API directly.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -172,7 +211,10 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_ClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.ClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_ClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.ClientRequestId">ClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the caller-generated request identity, in the form of
+a GUID with no decoration such as curly braces, e.g.
+9C4D50EE-2D56-4CD3-8152-34347DC9F2B0.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,7 +231,7 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Guid</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -198,7 +240,11 @@ public Nullable&lt;Guid&gt; ClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_EndTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.EndTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_EndTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.EndTime">EndTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the latest time from which to include metrics. This
+must be at least two hours before the current time. If not
+specified this defaults to the end time of the last aggregation
+interval currently available.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -215,7 +261,7 @@ public Nullable&lt;DateTime&gt; EndTime { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -224,7 +270,10 @@ public Nullable&lt;DateTime&gt; EndTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_Filter_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.Filter*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_Filter" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.Filter">Filter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets an OData $filter clause. For more information on
+constructing this filter, see
+<a href="https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-account-usage-metrics">https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-account-usage-metrics</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,7 +290,7 @@ public string Filter { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -250,7 +299,9 @@ public string Filter { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_MaxResults_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.MaxResults*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_MaxResults" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.MaxResults">MaxResults</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum number of items to return in the response.
+A maximum of 1000 results will be returned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,7 +318,7 @@ public Nullable&lt;int&gt; MaxResults { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -276,7 +327,10 @@ public Nullable&lt;int&gt; MaxResults { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_OcpDate_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.OcpDate*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_OcpDate" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.OcpDate">OcpDate</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time the request was issued. Client libraries
+typically set this to the current system clock time; set it
+explicitly if you are calling the REST API directly.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -294,7 +348,7 @@ public Nullable&lt;DateTime&gt; OcpDate { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -303,7 +357,9 @@ public Nullable&lt;DateTime&gt; OcpDate { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_ReturnClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.ReturnClientRequestId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_ReturnClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.ReturnClientRequestId">ReturnClientRequestId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether the server should return the client-request-id
+in the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,7 +376,7 @@ public Nullable&lt;bool&gt; ReturnClientRequestId { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -329,7 +385,11 @@ public Nullable&lt;bool&gt; ReturnClientRequestId { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_StartTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.StartTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_StartTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.StartTime">StartTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the earliest time from which to include metrics. This
+must be at least two and a half hours before the current time. If
+not specified this defaults to the start time of the last
+aggregation interval currently available.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -346,7 +406,7 @@ public Nullable&lt;DateTime&gt; StartTime { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -355,7 +415,9 @@ public Nullable&lt;DateTime&gt; StartTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_Timeout_" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.Timeout*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_Timeout" data-uid="Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.Timeout">Timeout</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum time that the server can spend processing
+the request, in seconds. The default is 30 seconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -372,7 +434,7 @@ public Nullable&lt;int&gt; Timeout { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -411,8 +473,8 @@ public Nullable&lt;int&gt; Timeout { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

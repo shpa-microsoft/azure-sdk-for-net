@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Enum KeyOperations
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Enum KeyOperations
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,7 +83,8 @@
   
   <h1 id="Azure_Security_KeyVault_Keys_KeyOperations" data-uid="Azure.Security.KeyVault.Keys.KeyOperations" class="text-break">Enum KeyOperations
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Supported JsonWebKey cryptographic operations that may be performed on a key.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Security.KeyVault.Keys.html">Azure.Security.KeyVault.Keys</a></h6>
   <h6><strong>Assembly</strong>: Azure.Security.KeyVault.Keys.dll</h6>
@@ -94,35 +105,71 @@ public enum KeyOperations</code></pre>
     <tbody>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_All">All</td>
-        <td></td>
+        <td><p>Include all Key Operations
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_Decrypt">Decrypt</td>
-        <td></td>
+        <td><p>A key stored in Key Vault may be used to protect another key,
+typically a symmetric content encryption key (CEK).
+A key stored in Key Vault may be used to decrypt
+a single block of data.
+The size of the block is determined by the key type and selected encryption algorithm.
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_Encrypt">Encrypt</td>
-        <td></td>
+        <td><p>A key stored in Key Vault may be used to protect another key,
+typically a symmetric content encryption key (CEK).
+When the key in Key Vault is asymmetric, key encryption is used.
+A key stored in Key Vault may be used to encrypt
+a single block of data.
+The size of the block is determined by the key type and selected encryption algorithm.
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_Other">Other</td>
-        <td></td>
+        <td><p>Other type of Key Operation
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_Sign">Sign</td>
-        <td></td>
+        <td><p>This operation is &quot;sign hash&quot; as Key Vault doesn't support hashing
+of content as part of signature creation.
+Applications should hash the data to be signed locally,
+then request that Key Vault sign the hash.
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_Unwrap">Unwrap</td>
-        <td></td>
+        <td><p>Unwraps a symmetric key using the specified key that was initially used
+for wrapping that key. The unwrap operation supports decryption of a
+symmetric key using the target key encryption key.
+This operation is the reverse of the WRAP operation.
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_Verify">Verify</td>
-        <td></td>
+        <td><p>This operation is &quot;verify hash&quot;, as Key Vault doesn't support hashing of content
+as part of signature creation.
+Verification of signed hashes is supported as a convenience operation
+for applications that may not have access to [public] key material.
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
       <tr>
         <td id="Azure_Security_KeyVault_Keys_KeyOperations_Wrap">Wrap</td>
-        <td></td>
+        <td><p>The Wrap operation is supported as a convenience for
+applications that may not have access to [public] key material.
+For best application performance, wrap key operations should be performed locally.
+For more information, see <a href="https://docs.microsoft.com/en-us/azure/key-vault/about-keys-secrets-and-certificates#key-operations"></a>.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>
@@ -150,8 +197,8 @@ public enum KeyOperations</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

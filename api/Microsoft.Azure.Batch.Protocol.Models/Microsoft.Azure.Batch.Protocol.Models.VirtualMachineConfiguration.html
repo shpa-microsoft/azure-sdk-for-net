@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class VirtualMachineConfiguration
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class VirtualMachineConfiguration
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,13 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration" class="text-break">Class VirtualMachineConfiguration
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The configuration for Compute Nodes in a Pool based on the Azure
+Virtual Machines infrastructure.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">VirtualMachineConfiguration</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
@@ -92,7 +104,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.#ctor">VirtualMachineConfiguration()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the VirtualMachineConfiguration
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +116,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration__ctor_Microsoft_Azure_Batch_Protocol_Models_ImageReference_System_String_Microsoft_Azure_Batch_Protocol_Models_WindowsConfiguration_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_DataDisk__System_String_Microsoft_Azure_Batch_Protocol_Models_ContainerConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.#ctor(Microsoft.Azure.Batch.Protocol.Models.ImageReference,System.String,Microsoft.Azure.Batch.Protocol.Models.WindowsConfiguration,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.DataDisk},System.String,Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration)">VirtualMachineConfiguration(ImageReference, String, WindowsConfiguration, IList&lt;DataDisk&gt;, String, ContainerConfiguration)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the VirtualMachineConfiguration
+class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,32 +137,45 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ImageReference.html">ImageReference</a></td>
         <td><span class="parametername">imageReference</span></td>
-        <td></td>
+        <td><p>A reference to the Azure Virtual
+Machines Marketplace Image or the custom Virtual Machine Image to
+use.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">nodeAgentSKUId</span></td>
-        <td></td>
+        <td><p>The SKU of the Batch Compute Node
+agent to be provisioned on Compute Nodes in the Pool.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.WindowsConfiguration.html">WindowsConfiguration</a></td>
         <td><span class="parametername">windowsConfiguration</span></td>
-        <td></td>
+        <td><p>Windows operating system
+settings on the virtual machine.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.DataDisk.html">DataDisk</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.DataDisk.html">DataDisk</a>&gt;</td>
         <td><span class="parametername">dataDisks</span></td>
-        <td></td>
+        <td><p>The configuration for data disks attached
+to the Compute Nodes in the Pool.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">licenseType</span></td>
-        <td></td>
+        <td><p>The type of on-premises license to be
+used when deploying the operating system.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration.html">ContainerConfiguration</a></td>
         <td><span class="parametername">containerConfiguration</span></td>
-        <td></td>
+        <td><p>The container configuration
+for the Pool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,7 +185,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_ContainerConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.ContainerConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_ContainerConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.ContainerConfiguration">ContainerConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the container configuration for the Pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -178,11 +208,19 @@ public Microsoft.Azure.Batch.Protocol.Models.ContainerConfiguration ContainerCon
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_ContainerConfiguration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If specified, setup is performed on each Compute Node in the Pool</p>
+<p>to allow Tasks to run in containers. All regular Tasks and Job</p>
+<p>manager Tasks run on this Pool must specify the containerSettings</p>
+<p>property, and all other Tasks may specify it.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_DataDisks_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.DataDisks*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_DataDisks" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.DataDisks">DataDisks</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration for data disks attached to the
+Compute Nodes in the Pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,16 +237,31 @@ public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.DataDisk.html">DataDisk</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.DataDisk.html">DataDisk</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_DataDisks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property must be specified if the Compute Nodes in the Pool</p>
+<p>need to have empty data disks attached to them. This cannot be</p>
+<p>updated. Each Compute Node gets its own disk (the disk is not a</p>
+<p>file share). Existing disks cannot be attached, each attached disk</p>
+<p>is empty. When the Compute Node is removed from the Pool, the disk</p>
+<p>and all data associated with it is also deleted. The disk is not</p>
+<p>formatted after being attached, it must be formatted before use -</p>
+<p>for more information see</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/classic/attach-disk#initialize-a-new-data-disk-in-linux">https://docs.microsoft.com/en-us/azure/virtual-machines/linux/classic/attach-disk#initialize-a-new-data-disk-in-linux</a></p>
+<p>and</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps#add-an-empty-data-disk-to-a-virtual-machine">https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps#add-an-empty-data-disk-to-a-virtual-machine</a>.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_ImageReference_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.ImageReference*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_ImageReference" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.ImageReference">ImageReference</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a reference to the Azure Virtual Machines Marketplace
+Image or the custom Virtual Machine Image to use.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -234,7 +287,9 @@ public Microsoft.Azure.Batch.Protocol.Models.ImageReference ImageReference { get
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_LicenseType_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.LicenseType*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_LicenseType" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.LicenseType">LicenseType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the type of on-premises license to be used when
+deploying the operating system.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,16 +306,26 @@ public string LicenseType { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_LicenseType_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This only applies to Images that contain the Windows operating</p>
+<p>system, and should only be used when you hold valid on-premises</p>
+<p>licenses for the Compute Nodes which will be deployed. If omitted,</p>
+<p>no on-premises licensing discount is applied. Values are:</p>
+<p>Windows_Server - The on-premises license is for Windows Server.</p>
+<p>Windows_Client - The on-premises license is for Windows Client.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_NodeAgentSKUId_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.NodeAgentSKUId*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_NodeAgentSKUId" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.NodeAgentSKUId">NodeAgentSKUId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the SKU of the Batch Compute Node agent to be
+provisioned on Compute Nodes in the Pool.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -277,16 +342,29 @@ public string NodeAgentSKUId { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_NodeAgentSKUId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch Compute Node agent is a program that runs on each Compute</p>
+<p>Node in the Pool, and provides the command-and-control interface</p>
+<p>between the Compute Node and the Batch service. There are different</p>
+<p>implementations of the Compute Node agent, known as SKUs, for</p>
+<p>different operating systems. You must specify a Compute Node agent</p>
+<p>SKU which matches the selected Image reference. To get the list of</p>
+<p>supported Compute Node agent SKUs along with their list of verified</p>
+<p>Image references, see the 'List supported Compute Node agent SKUs'</p>
+<p>operation.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_WindowsConfiguration_" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.WindowsConfiguration*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_WindowsConfiguration" data-uid="Microsoft.Azure.Batch.Protocol.Models.VirtualMachineConfiguration.WindowsConfiguration">WindowsConfiguration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets windows operating system settings on the virtual
+machine.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -308,6 +386,10 @@ public Microsoft.Azure.Batch.Protocol.Models.WindowsConfiguration WindowsConfigu
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_VirtualMachineConfiguration_WindowsConfiguration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property must not be specified if the imageReference property</p>
+<p>specifies a Linux OS Image.</p>
+</div>
 </article>
           </div>
           
@@ -332,8 +414,8 @@ public Microsoft.Azure.Batch.Protocol.Models.WindowsConfiguration WindowsConfigu
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

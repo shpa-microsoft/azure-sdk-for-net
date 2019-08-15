@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class NodeFile
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NodeFile
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,12 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_NodeFile" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile" class="text-break">Class NodeFile
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Information about a file or directory on a Compute Node.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">NodeFile</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
@@ -92,7 +103,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeFile__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeFile__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.#ctor">NodeFile()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NodeFile class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +114,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeFile__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeFile__ctor_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileProperties_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.#ctor(System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.FileProperties)">NodeFile(String, String, Nullable&lt;Boolean&gt;, FileProperties)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the NodeFile class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,24 +132,29 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The file path.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">url</span></td>
-        <td></td>
+        <td><p>The URL of the file.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><span class="parametername">isDirectory</span></td>
-        <td></td>
+        <td><p>Whether the object represents a
+directory.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.FileProperties.html">FileProperties</a></td>
         <td><span class="parametername">properties</span></td>
-        <td></td>
+        <td><p>The file properties.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +164,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_IsDirectory_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.IsDirectory*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_IsDirectory" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.IsDirectory">IsDirectory</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets whether the object represents a directory.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,7 +182,7 @@ public Nullable&lt;bool&gt; IsDirectory { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -172,7 +191,8 @@ public Nullable&lt;bool&gt; IsDirectory { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_Name_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.Name*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_Name" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the file path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,7 +209,7 @@ public string Name { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -198,7 +218,8 @@ public string Name { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_Properties_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.Properties*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_Properties" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.Properties">Properties</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the file properties.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,7 +245,8 @@ public Microsoft.Azure.Batch.Protocol.Models.FileProperties Properties { get; se
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_Url_" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.Url*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_NodeFile_Url" data-uid="Microsoft.Azure.Batch.Protocol.Models.NodeFile.Url">Url</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,7 +263,7 @@ public string Url { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -270,8 +292,8 @@ public string Url { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

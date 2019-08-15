@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class Certificate
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Certificate
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,13 @@
   
   <h1 id="Microsoft_Azure_Batch_Protocol_Models_Certificate" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate" class="text-break">Class Certificate
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A Certificate that can be installed on Compute Nodes and can be used to
+authenticate operations on the machine.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">Certificate</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
@@ -92,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.#ctor">Certificate()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the Certificate class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,7 +115,8 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate__ctor_System_String_System_String_System_String_System_Nullable_Microsoft_Azure_Batch_Protocol_Models_CertificateState__System_Nullable_System_DateTime__System_Nullable_Microsoft_Azure_Batch_Protocol_Models_CertificateState__System_Nullable_System_DateTime__System_String_Microsoft_Azure_Batch_Protocol_Models_DeleteCertificateError_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.#ctor(System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Batch.Protocol.Models.CertificateState},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.CertificateState},System.Nullable{System.DateTime},System.String,Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError)">Certificate(String, String, String, Nullable&lt;CertificateState&gt;, Nullable&lt;DateTime&gt;, Nullable&lt;CertificateState&gt;, Nullable&lt;DateTime&gt;, String, DeleteCertificateError)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the Certificate class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -119,49 +133,65 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprint</span></td>
-        <td></td>
+        <td><p>The X.509 thumbprint of the Certificate.
+This is a sequence of up to 40 hex digits.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">thumbprintAlgorithm</span></td>
-        <td></td>
+        <td><p>The algorithm used to derive the
+thumbprint.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">url</span></td>
-        <td></td>
+        <td><p>The URL of the Certificate.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
         <td><span class="parametername">state</span></td>
-        <td></td>
+        <td><p>The current state of the Certificate.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">stateTransitionTime</span></td>
-        <td></td>
+        <td><p>The time at which the Certificate
+entered its current state.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
         <td><span class="parametername">previousState</span></td>
-        <td></td>
+        <td><p>The previous state of the
+Certificate.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td><span class="parametername">previousStateTransitionTime</span></td>
-        <td></td>
+        <td><p>The time at which the
+Certificate entered its previous state.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">publicData</span></td>
-        <td></td>
+        <td><p>The public part of the Certificate as a
+base-64 encoded .cer file.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError.html">DeleteCertificateError</a></td>
         <td><span class="parametername">deleteCertificateError</span></td>
-        <td></td>
+        <td><p>The error that occurred on the
+last attempt to delete this Certificate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -171,7 +201,9 @@
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_DeleteCertificateError_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.DeleteCertificateError*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_DeleteCertificateError" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.DeleteCertificateError">DeleteCertificateError</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the error that occurred on the last attempt to delete
+this Certificate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -193,11 +225,16 @@ public Microsoft.Azure.Batch.Protocol.Models.DeleteCertificateError DeleteCertif
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_DeleteCertificateError_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is set only if the Certificate is in the DeleteFailed</p>
+<p>state.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PreviousState_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.PreviousState*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PreviousState" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.PreviousState">PreviousState</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the previous state of the Certificate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -214,16 +251,23 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; Pr
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PreviousState_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is not set if the Certificate is in its initial</p>
+<p>active state. Possible values include: 'active', 'deleting',</p>
+<p>'deleteFailed'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PreviousStateTransitionTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.PreviousStateTransitionTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PreviousStateTransitionTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.PreviousStateTransitionTime">PreviousStateTransitionTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the Certificate entered its previous
+state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -240,16 +284,22 @@ public Nullable&lt;DateTime&gt; PreviousStateTransitionTime { get; set; }</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PreviousStateTransitionTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is not set if the Certificate is in its initial</p>
+<p>Active state.</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PublicData_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.PublicData*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_PublicData" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.PublicData">PublicData</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the public part of the Certificate as a base-64
+encoded .cer file.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -266,7 +316,7 @@ public string PublicData { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -275,7 +325,8 @@ public string PublicData { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_State_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.State*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_State" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.State">State</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the current state of the Certificate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -292,16 +343,21 @@ public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateState&gt; St
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.CertificateState.html">CertificateState</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_State_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Possible values include: 'active', 'deleting', 'deleteFailed'</p>
+</div>
   
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_StateTransitionTime_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.StateTransitionTime*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_StateTransitionTime" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.StateTransitionTime">StateTransitionTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the time at which the Certificate entered its current
+state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -318,7 +374,7 @@ public Nullable&lt;DateTime&gt; StateTransitionTime { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -327,7 +383,9 @@ public Nullable&lt;DateTime&gt; StateTransitionTime { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_Thumbprint_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.Thumbprint*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_Thumbprint" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.Thumbprint">Thumbprint</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the X.509 thumbprint of the Certificate. This is a
+sequence of up to 40 hex digits.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -344,7 +402,7 @@ public string Thumbprint { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -353,7 +411,8 @@ public string Thumbprint { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_ThumbprintAlgorithm_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.ThumbprintAlgorithm*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_ThumbprintAlgorithm" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.ThumbprintAlgorithm">ThumbprintAlgorithm</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the algorithm used to derive the thumbprint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -370,7 +429,7 @@ public string ThumbprintAlgorithm { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -379,7 +438,8 @@ public string ThumbprintAlgorithm { get; set; }</code></pre>
   
   <a id="Microsoft_Azure_Batch_Protocol_Models_Certificate_Url_" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.Url*"></a>
   <h4 id="Microsoft_Azure_Batch_Protocol_Models_Certificate_Url" data-uid="Microsoft.Azure.Batch.Protocol.Models.Certificate.Url">Url</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the URL of the Certificate.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -396,7 +456,7 @@ public string Url { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -425,8 +485,8 @@ public string Url { get; set; }</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class EventHubClientOptions
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EventHubClientOptions
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,13 @@
   
   <h1 id="Azure_Messaging_EventHubs_EventHubClientOptions" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions" class="text-break">Class EventHubClientOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The set of options that can be specified when creating an <a class="xref" href="Azure.Messaging.EventHubs.EventHubClient.html">EventHubClient</a>
+to configure its behavior.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">EventHubClientOptions</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></h6>
@@ -102,34 +114,11 @@
   </h3>
   
   
-  <a id="Azure_Messaging_EventHubs_EventHubClientOptions_DefaultTimeout_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.DefaultTimeout*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_DefaultTimeout" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.DefaultTimeout">DefaultTimeout</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TimeSpan DefaultTimeout { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Azure_Messaging_EventHubs_EventHubClientOptions_Proxy_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.Proxy*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_Proxy" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.Proxy">Proxy</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The proxy to use for communication over web sockets.  If not specified,
+the system-wide proxy settings will be honored.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -145,20 +134,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Net.IWebProxy</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.iwebproxy">IWebProxy</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Azure_Messaging_EventHubs_EventHubClientOptions_Proxy_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A proxy cannot be used for communication over TCP; if web sockets are not in</p>
+<p>use, specifying a proxy is an invalid option.</p>
+</div>
   
   
-  <a id="Azure_Messaging_EventHubs_EventHubClientOptions_Retry_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.Retry*"></a>
-  <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_Retry" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.Retry">Retry</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Azure_Messaging_EventHubs_EventHubClientOptions_RetryOptions_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.RetryOptions*"></a>
+  <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_RetryOptions" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.RetryOptions">RetryOptions</h4>
+  <div class="markdown level1 summary"><p>The set of options to use for determining whether a failed operation should be retried and,
+if so, the amount of time to wait between retry attempts.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Azure.Messaging.EventHubs.Retry Retry { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Azure.Messaging.EventHubs.RetryOptions RetryOptions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -170,7 +165,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Azure.Messaging.EventHubs.Retry.html">Retry</a></td>
+        <td><a class="xref" href="Azure.Messaging.EventHubs.RetryOptions.html">RetryOptions</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -179,7 +174,9 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClientOptions_TransportType_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.TransportType*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_TransportType" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.TransportType">TransportType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The type of protocol and transport that will be used for communicating with the Event Hubs
+service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -206,7 +203,8 @@
   
   <a id="Azure_Messaging_EventHubs_EventHubClientOptions_Equals_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.Equals*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_Equals_System_Object_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,9 +222,10 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> to compare with this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -240,8 +239,9 @@ public override bool Equals (object obj);</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code data-dev-comment-type="c">true</code> if the specified <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a> is equal to this instance; otherwise, <code data-dev-comment-type="c">false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -249,7 +249,8 @@ public override bool Equals (object obj);</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubClientOptions_GetHashCode_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.GetHashCode*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_GetHashCode" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns a hash code for this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -266,8 +267,9 @@ public override int GetHashCode ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -275,7 +277,8 @@ public override int GetHashCode ();</code></pre>
   
   <a id="Azure_Messaging_EventHubs_EventHubClientOptions_ToString_" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.ToString*"></a>
   <h4 id="Azure_Messaging_EventHubs_EventHubClientOptions_ToString" data-uid="Azure.Messaging.EventHubs.EventHubClientOptions.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the instance to string representation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -292,8 +295,9 @@ public override string ToString ();</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that represents this instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -321,8 +325,8 @@ public override string ToString ();</code></pre>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

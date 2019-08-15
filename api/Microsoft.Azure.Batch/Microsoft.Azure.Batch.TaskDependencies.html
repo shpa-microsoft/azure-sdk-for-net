@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class TaskDependencies
-   </title>
+   | Azure SDK for Net </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class TaskDependencies
-   ">
+   | Azure SDK for Net ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -19,8 +19,8 @@
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
     
-    
-    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -73,11 +83,13 @@
   
   <h1 id="Microsoft_Azure_Batch_TaskDependencies" data-uid="Microsoft.Azure.Batch.TaskDependencies" class="text-break">Class TaskDependencies
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Specifies any dependencies of a task. Any task that is explicitly specified or within a dependency range must complete
+before the dependant task will be scheduled.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><span class="xref">TaskDependencies</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
@@ -92,7 +104,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies__ctor_" data-uid="Microsoft.Azure.Batch.TaskDependencies.#ctor*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies__ctor_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_TaskIdRange__" data-uid="Microsoft.Azure.Batch.TaskDependencies.#ctor(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.TaskIdRange})">TaskDependencies(IEnumerable&lt;String&gt;, IEnumerable&lt;TaskIdRange&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -109,24 +122,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">taskIds</span></td>
-        <td></td>
+        <td><p>The list of task ids that must complete before this task can be scheduled. null is treated as an empty list.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.TaskIdRange.html">TaskIdRange</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.TaskIdRange.html">TaskIdRange</a>&gt;</td>
         <td><span class="parametername">taskIdRanges</span></td>
-        <td></td>
+        <td><p>The list of task ranges that must complete before this task can be scheduled. null is treated as an empty list.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Microsoft_Azure_Batch_TaskDependencies__ctor_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_TaskIdRange___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This constructor provides the most general way of initializing a TaskDependencies object.
+In practice, most dependencies are on a single task, a list of task ids, or a single range of
+tasks. You can express these dependencies more clearly using <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html#Microsoft_Azure_Batch_TaskDependencies_OnId_System_String_">OnId(String)</a>, <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html#Microsoft_Azure_Batch_TaskDependencies_OnIds_System_String___">OnIds(String[])</a>,
+<a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html#Microsoft_Azure_Batch_TaskDependencies_OnTasks_Microsoft_Azure_Batch_CloudTask___">OnTasks(CloudTask[])</a>, and <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html#Microsoft_Azure_Batch_TaskDependencies_OnIdRange_System_Int32_System_Int32_">OnIdRange(Int32, Int32)</a> methods.</p>
+</div>
   <h3 id="properties">Properties
   </h3>
   
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_TaskIdRanges_" data-uid="Microsoft.Azure.Batch.TaskDependencies.TaskIdRanges*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_TaskIdRanges" data-uid="Microsoft.Azure.Batch.TaskDependencies.TaskIdRanges">TaskIdRanges</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the list of task IDs that this task depends on. All tasks in this list must complete successfully before
+the dependent task can be scheduled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -142,7 +165,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.TaskIdRange.html">TaskIdRange</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.TaskIdRange.html">TaskIdRange</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -151,7 +174,9 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_TaskIds_" data-uid="Microsoft.Azure.Batch.TaskDependencies.TaskIds*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_TaskIds" data-uid="Microsoft.Azure.Batch.TaskDependencies.TaskIds">TaskIds</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the list of task ID ranges that this task depends on. All tasks in all ranges must complete successfully
+before the dependent task can be scheduled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,7 +192,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -178,7 +203,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_OnId_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnId*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_OnId_System_String_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnId(System.String)">OnId(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on a single task.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -195,9 +221,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
-        <td></td>
+        <td><p>The task to depend on.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -212,7 +239,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on a single task.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -220,7 +248,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_OnIdRange_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnIdRange*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_OnIdRange_System_Int32_System_Int32_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnIdRange(System.Int32,System.Int32)">OnIdRange(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on a range of task ids.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,14 +266,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">start</span></td>
-        <td></td>
+        <td><p>The first task id in the range to depend on.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">end</span></td>
-        <td></td>
+        <td><p>The last task id in the range to depend on.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -259,7 +290,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on the specified range of tasks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -267,7 +299,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_OnIds_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnIds*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_OnIds_System_Collections_Generic_IEnumerable_System_String__" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnIds(System.Collections.Generic.IEnumerable{System.String})">OnIds(IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on a list of task ids.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -284,9 +317,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
         <td><span class="parametername">ids</span></td>
-        <td></td>
+        <td><p>The tasks to depend on.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -301,7 +335,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on the specified tasks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -309,7 +344,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_OnIds_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnIds*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_OnIds_System_String___" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnIds(System.String[])">OnIds(String[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on a list of task ids.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -326,9 +362,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>[]</td>
         <td><span class="parametername">ids</span></td>
-        <td></td>
+        <td><p>The tasks to depend on.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -343,7 +380,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on the specified tasks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -351,7 +389,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_OnTasks_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnTasks*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_OnTasks_Microsoft_Azure_Batch_CloudTask___" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnTasks(Microsoft.Azure.Batch.CloudTask[])">OnTasks(CloudTask[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on a list of tasks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -370,7 +409,8 @@
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>[]</td>
         <td><span class="parametername">tasks</span></td>
-        <td></td>
+        <td><p>The tasks to depend on.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -385,7 +425,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on the specified tasks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -393,7 +434,8 @@
   
   <a id="Microsoft_Azure_Batch_TaskDependencies_OnTasks_" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnTasks*"></a>
   <h4 id="Microsoft_Azure_Batch_TaskDependencies_OnTasks_System_Collections_Generic_IEnumerable_Microsoft_Azure_Batch_CloudTask__" data-uid="Microsoft.Azure.Batch.TaskDependencies.OnTasks(System.Collections.Generic.IEnumerable{Microsoft.Azure.Batch.CloudTask})">OnTasks(IEnumerable&lt;CloudTask&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on a list of tasks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -410,9 +452,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.CloudTask.html">CloudTask</a>&gt;</td>
         <td><span class="parametername">tasks</span></td>
-        <td></td>
+        <td><p>The tasks to depend on.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -427,7 +470,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.TaskDependencies.html">TaskDependencies</a> representing dependency on the specified tasks.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -455,8 +499,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            Azure SDK for Net
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>
