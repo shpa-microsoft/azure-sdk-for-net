@@ -121,6 +121,8 @@ namespace Microsoft.Azure.Management.Compute.Models
         /// minutes and 120 minutes (inclusive) and should be specified in ISO
         /// 8601 format. The default value is 90 minutes (PT1H30M).
         /// &lt;br&gt;&lt;br&gt; Minimum api-version: 2020-06-01</param>
+        /// /// <param name="scheduledEventsProfile">Specifies Scheduled Event
+        /// related configurations.</param>
         /// <param name="resources">The virtual machine child extension
         /// resources.</param>
         /// <param name="identity">The identity of the virtual machine, if
@@ -128,7 +130,7 @@ namespace Microsoft.Azure.Management.Compute.Models
         /// <param name="zones">The virtual machine zones.</param>
         /// <param name="extendedLocation">The extended location of the Virtual
         /// Machine.</param>
-        public VirtualMachine(string location, string id, string name, string type, IDictionary<string, string> tags, Plan plan, HardwareProfile hardwareProfile, StorageProfile storageProfile, AdditionalCapabilities additionalCapabilities, OSProfile osProfile, NetworkProfile networkProfile, SecurityProfile securityProfile, DiagnosticsProfile diagnosticsProfile, SubResource availabilitySet, SubResource virtualMachineScaleSet, SubResource proximityPlacementGroup, string priority, string evictionPolicy, BillingProfile billingProfile, SubResource host, SubResource hostGroup, string provisioningState, VirtualMachineInstanceView instanceView, string licenseType, string vmId, string extensionsTimeBudget, IList<VirtualMachineExtension> resources, VirtualMachineIdentity identity, IList<string> zones, ExtendedLocation extendedLocation)
+        public VirtualMachine(string location, string id, string name, string type, IDictionary<string, string> tags, Plan plan, HardwareProfile hardwareProfile, StorageProfile storageProfile, AdditionalCapabilities additionalCapabilities, OSProfile osProfile, NetworkProfile networkProfile, SecurityProfile securityProfile, DiagnosticsProfile diagnosticsProfile, SubResource availabilitySet, SubResource virtualMachineScaleSet, SubResource proximityPlacementGroup, string priority, string evictionPolicy, BillingProfile billingProfile, SubResource host, SubResource hostGroup, string provisioningState, VirtualMachineInstanceView instanceView, string licenseType, string vmId, string extensionsTimeBudget, ScheduledEventsProfile scheduledEventsProfile, IList<VirtualMachineExtension> resources, VirtualMachineIdentity identity, IList<string> zones, ExtendedLocation extendedLocation)
             : base(location, id, name, type, tags)
         {
             Plan = plan;
@@ -152,6 +154,7 @@ namespace Microsoft.Azure.Management.Compute.Models
             LicenseType = licenseType;
             VmId = vmId;
             ExtensionsTimeBudget = extensionsTimeBudget;
+            ScheduledEventsProfile = scheduledEventsProfile;
             Resources = resources;
             Identity = identity;
             Zones = zones;
